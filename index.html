@@ -2,24 +2,62 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+    <script type="text/javascript">
+        $(document).on("ready", function () {
+            $(".regular").slick({
+                arrows: true,
+                infinite: true,
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                responsive: [
+                    {
+                        breakpoint: 1200,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 1,
+                        },
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1,
+                        },
+                    },
+                    {
+                        breakpoint: 400,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                        },
+                    },
+                ],
+            });
+        });
+    </script>
     <title>Document</title>
 </head>
 
 <body>
     <section>
-        <div class=" top-header d-lg-flex d-none">
-            <img src="./assets/images/Logo 1.png" alt="">
+        <div class="top-header d-lg-flex d-none">
+            <img src="./assets/images/Logo 1.png" alt="" />
         </div>
         <nav class="navbar navbar-expand-lg custome-nav-bg" aria-label="Offcanvas navbar large">
             <div class="container-xl container-fluid">
-                <a class="navbar-brand d-lg-none" href="#"> <img src="./assets/images/Logo 1.png" alt=""
-                        class="header-logo"></a>
+                <a class="navbar-brand d-lg-none" href="#">
+                    <img src="./assets/images/Logo 1.png" alt="" class="header-logo" /></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2">
                     <span class="navbar-toggler-icon"></span>
@@ -27,13 +65,11 @@
                 <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar2"
                     aria-labelledby="offcanvasNavbar2Label">
                     <div class="offcanvas-header justify-content-end">
-
                         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
                             aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body d-lg-flex justify-content-between">
                         <ul class="navbar-nav justify-content-start flex-grow-1 pe-3 align-items-center custome-nav">
-
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="#">Home</a>
                             </li>
@@ -87,22 +123,22 @@
     </section>
     <section class="index-banner">
         <video controls poster="./assets/images/banner.png">
-            <source src="./assets/images/WhatsApp Video 2023-09-22 at 02.47.18.mp4" type="video/mp4">
-            <source src="movie.ogg" type="video/ogg">
+            <source src="./assets/images/WhatsApp Video 2023-09-22 at 02.47.18.mp4" type="video/mp4" />
+            <source src="movie.ogg" type="video/ogg" />
             Your browser does not support the video tag.
         </video>
         <div class="container banner-text">
             <div class="col-lg-6">
-                <div class="miniheading">
-                    the out standing society
-                </div>
-                <br>
+                <div class="miniheading">the out standing society</div>
+                <br />
                 <p class="banner-heading">
-                    your getway <br> pure social care
+                    your getway <br />
+                    pure social care
                 </p>
                 <p class="para">
-                    In augue ligula, feugiat ut nulla consequat. Ut est lacus, molestie in arcu no, iaculis vehicula
-                    ipsum. Nunc faucibus, nisl id dapibus finibus, enim diam interdum nulla, sed laoreet risus lectus.
+                    In augue ligula, feugiat ut nulla consequat. Ut est lacus, molestie
+                    in arcu no, iaculis vehicula ipsum. Nunc faucibus, nisl id dapibus
+                    finibus, enim diam interdum nulla, sed laoreet risus lectus.
                 </p>
                 <button class="btn primary-btn">Explore More</button>
             </div>
@@ -112,9 +148,7 @@
         <div class="container my-5">
             <div class="row">
                 <div class="col-lg-4">
-                    <div class="miniheading">
-                        Our Sponsors
-                    </div>
+                    <div class="miniheading">Our Sponsors</div>
                     <p class="heading mt-3">
                         extremely grateful for the following organisations
                     </p>
@@ -122,41 +156,37 @@
                 <div class="col-md-6 col-lg-4">
                     <div class="d-flex sponser mt-4">
                         <div class="col-4">
-                            <img src="./assets/images/Camascope_logo-04 1.png" alt="">
+                            <img src="./assets/images/Camascope_logo-04 1.png" alt="" />
                         </div>
                         <div class="col-8 ps-4">
-                            <p class="heading-sm">
-                                Camascope
-                            </p>
+                            <p class="heading-sm">Camascope</p>
                             <p class="para">
-                                formerly known as VCare Systems, is a leading provider of eMAR (electronic medicatio...
+                                formerly known as VCare Systems, is a leading provider of eMAR
+                                (electronic medicatio...
                             </p>
                         </div>
                     </div>
                     <div class="d-flex sponser mt-4">
                         <div class="col-4">
-                            <img src="./assets/images/found-logo-1 1.png" alt="">
+                            <img src="./assets/images/found-logo-1 1.png" alt="" />
                         </div>
                         <div class="col-8 ps-4">
-                            <p class="heading-sm">
-                                Found
-                            </p>
+                            <p class="heading-sm">Found</p>
                             <p class="para">
-                                by Lottie is the leading software for care homes & retirement living communities.
-                                Designed... </p>
+                                by Lottie is the leading software for care homes & retirement
+                                living communities. Designed...
+                            </p>
                         </div>
                     </div>
                     <div class="d-flex sponser mt-4">
                         <div class="col-4">
-                            <img src="./assets/images/Nourish_logo_No_R_300dpi5 1.png" alt="">
+                            <img src="./assets/images/Nourish_logo_No_R_300dpi5 1.png" alt="" />
                         </div>
                         <div class="col-8 ps-4">
-                            <p class="heading-sm">
-                                Nourish Care
-                            </p>
+                            <p class="heading-sm">Nourish Care</p>
                             <p class="para">
-                                is a Digital Care Planning provider offering a flexible digital platform that can be
-                                tailored...
+                                is a Digital Care Planning provider offering a flexible
+                                digital platform that can be tailored...
                             </p>
                         </div>
                     </div>
@@ -164,62 +194,478 @@
                 <div class="col-md-6 col-lg-4">
                     <div class="d-flex sponser mt-4">
                         <div class="col-4">
-                            <img src="./assets/images/Icon.png" alt="">
+                            <img src="./assets/images/Icon.png" alt="" />
                         </div>
                         <div class="col-8 ps-4">
-                            <p class="heading-sm">
-                                PainChek®
-                            </p>
+                            <p class="heading-sm">PainChek®</p>
                             <p class="para">
-                                the app available on smartphones and tablets that enables digital pain assessments...
+                                the app available on smartphones and tablets that enables
+                                digital pain assessments...
                             </p>
                         </div>
                     </div>
                     <div class="d-flex sponser mt-4">
                         <div class="col-4">
-                            <img src="./assets/images/RWK-Goodman 1.png" alt="">
+                            <img src="./assets/images/RWK-Goodman 1.png" alt="" />
                         </div>
                         <div class="col-8 ps-4">
-                            <p class="heading-sm">
-                                Local Shipping Services
-                            </p>
+                            <p class="heading-sm">Local Shipping Services</p>
                             <p class="para">
-                                Following the quality of our service thus having gained trust of our many clients. </p>
+                                Following the quality of our service thus having gained trust
+                                of our many clients.
+                            </p>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
     </section>
     <section class="green-white">
-        <div class="container-fluid p-5">
-            <div class="row px-5 ">
-                <div class="col-md-7">
-                    <img src="./assets/images/Image.png" class="w-100" alt="">
+        <div class="container-fluid p-sm-5">
+            <div class="row px-lg-5">
+                <div class="col-md-7 my-auto">
+                    <img src="./assets/images/Image.png" class="w-100" alt="" />
                 </div>
-                <div class="col-md-4 my-auto ">
-                    <p class="miniheading">
-                        Why Choose
-                    </p>
+
+                <div class="col-md-5 col-md-4 my-md-auto mt-5">
+                    <p class="miniheading">Why Choose</p>
                     <div class="heading">
                         Sharing and Celebrating Best practice in Social Care
                     </div>
-                    <p class="para">In 2021 the Outstanding Society (OS) was set up as a Community Interest Company
-                        (CIC). This was to provide a platform to share and celebrate best practice whilst helping others
-                        to improve and raise the profile of Social Care. 
-                        <br><br><br>Our joint vision as Directors is to give
-                        Providers Free membership which will allow free access to our virtual events, newsletters,
-                        podcasts and the OS app. It will provide a platform for all providers to access topical
-                        information and will also be a platform to celebrate innovation and share best practice. <br><br><br> We
-                        continue to have close partnerships with Care England, Skills for care, the Care Workers Charity
-                        and the DHSC.</p>
-                        <button class="btn primary-btn mt-5">Explore More</button>
+                    <p class="para mt-3">
+                        In 2021 the Outstanding Society (OS) was set up as a Community
+                        Interest Company (CIC). This was to provide a platform to share
+                        and celebrate best practice whilst helping others to improve and
+                        raise the profile of Social Care. <br /><br /><br />Our joint
+                        vision as Directors is to give Providers Free membership which
+                        will allow free access to our virtual events, newsletters,
+                        podcasts and the OS app. It will provide a platform for all
+                        providers to access topical information and will also be a
+                        platform to celebrate innovation and share best practice.
+                        <br /><br /><br />
+                        We continue to have close partnerships with Care England, Skills
+                        for care, the Care Workers Charity and the DHSC.
+                    </p>
+                    <button class="btn primary-btn mt-5">Explore More</button>
                 </div>
             </div>
         </div>
     </section>
+    <section class="mt-5">
+        <div class="container">
+            <p class="miniheading">The Team</p>
+            <div class="d-flex justify-content-between align-content-center">
+                <p class="heading w-auto">Meet The Team</p>
+                <div class="d-flex">
+                    <button class="slickbtnprev">
+                        <i class="bi bi-arrow-left"></i>
+                    </button>
+                    <button class="slickbtnnext">
+                        <i class="bi bi-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="regular index-slider">
+        <div>
+            <div class="position-relative d-flex justify-content-center align-items-center">
+                <img src="./assets/images/photo.png" class="slider-img" alt="" />
+                <img src="./assets/images/Polygon 2.png" class="position-absolute" alt="" />
+            </div>
+            <div class="slider-footer">
+                <h5>Jessca Arow</h5>
+                <p>Designer</p>
+                <div class="slider-social">
+                    <a href="">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="position-relative d-flex justify-content-center align-items-center">
+                <img src="./assets/images/photo.png" class="slider-img" alt="" />
+                <img src="./assets/images/Polygon 2.png" class="position-absolute" alt="" />
+            </div>
+            <div class="slider-footer">
+                <h5>Jessca Arow</h5>
+                <p>Designer</p>
+                <div class="slider-social">
+                    <a href="">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="position-relative d-flex justify-content-center align-items-center">
+                <img src="./assets/images/photo.png" class="slider-img" alt="" />
+                <img src="./assets/images/Polygon 2.png" class="position-absolute" alt="" />
+            </div>
+            <div class="slider-footer">
+                <h5>Jessca Arow</h5>
+                <p>Designer</p>
+                <div class="slider-social">
+                    <a href="">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="position-relative d-flex justify-content-center align-items-center">
+                <img src="./assets/images/photo.png" class="slider-img" alt="" />
+                <img src="./assets/images/Polygon 2.png" class="position-absolute" alt="" />
+            </div>
+            <div class="slider-footer">
+                <h5>Jessca Arow</h5>
+                <p>Designer</p>
+                <div class="slider-social">
+                    <a href="">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="position-relative d-flex justify-content-center align-items-center">
+                <img src="./assets/images/photo.png" class="slider-img" alt="" />
+                <img src="./assets/images/Polygon 2.png" class="position-absolute" alt="" />
+            </div>
+            <div class="slider-footer">
+                <h5>Jessca Arow</h5>
+                <p>Designer</p>
+                <div class="slider-social">
+                    <a href="">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="position-relative d-flex justify-content-center align-items-center">
+                <img src="./assets/images/photo.png" class="slider-img" alt="" />
+                <img src="./assets/images/Polygon 2.png" class="position-absolute" alt="" />
+            </div>
+            <div class="slider-footer">
+                <h5>Jessca Arow</h5>
+                <p>Designer</p>
+                <div class="slider-social">
+                    <a href="">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="position-relative d-flex justify-content-center align-items-center">
+                <img src="./assets/images/photo.png" class="slider-img" alt="" />
+                <img src="./assets/images/Polygon 2.png" class="position-absolute" alt="" />
+            </div>
+            <div class="slider-footer">
+                <h5>Jessca Arow</h5>
+                <p>Designer</p>
+                <div class="slider-social">
+                    <a href="">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="position-relative d-flex justify-content-center align-items-center">
+                <img src="./assets/images/photo.png" class="slider-img" alt="" />
+                <img src="./assets/images/Polygon 2.png" class="position-absolute" alt="" />
+            </div>
+            <div class="slider-footer">
+                <h5>Jessca Arow</h5>
+                <p>Designer</p>
+                <div class="slider-social">
+                    <a href="">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="health-social">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="./assets/images/croped-300x300 copy 1.png" alt="">
+                            <p class="para">The Chief Nurse for Adult Social Care, Deborah Sturdy, is working with
+                                colleagues at NHS England...</p>
+                            <button class="btn primary-btn">Explore More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="./assets/images/Proud-to-Support-1024x342 copy 1.png" alt="">
+                            <p class="para">“Our mission is to improve the quality of life for people living, visiting,
+                                and working in care homes, while also reducing the risk of infections...</p>
+                            <button class="btn primary-btn">Explore More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="./assets/images/slice1-1 copy 1.png" alt="">
+                            <p class="para">The Chief Nurse for Adult Social Care, Deborah Sturdy, is working with
+                                colleagues at NHS England...</p>
+                            <button class="btn primary-btn">Explore More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="mt-5">
+        <div class="container mt-5 text-center">
+            <p class="miniheading mx-auto">
+                Our Blog
+            </p>
+            <p class="heading">
+                Our Latest News
+            </p>
+            <div class="row justify-content-center pt-5">
+                <div class="col-lg-10">
+                    <div class="row mt-4">
+                        <div class="col-lg-6 col-md-5">
+                            <img src="./assets/images/blog.png" class="w-100" alt="">
+                        </div>
+                        <div class="col-lg-6 col-md-7 d-flex">
+                            <div class=" col-3 blog-date">
+                                <svg width="43" height="48" viewBox="0 0 53 58" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="11" y="28" width="6" height="6" stroke="#1C1F35" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <rect x="11" y="41" width="6" height="6" stroke="#1C1F35" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <rect x="24" y="28" width="6" height="6" stroke="#1C1F35" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <rect x="24" y="41" width="6" height="6" stroke="#1C1F35" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <rect x="36" y="28" width="6" height="6" fill="#39B54A" stroke="#1C1F35"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <rect x="36" y="41" width="6" height="6" stroke="#1C1F35" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M52 20H1V9C1 7.34315 2.34315 6 4 6H49C50.6569 6 52 7.34315 52 9V20Z"
+                                        fill="#39B54A" />
+                                    <path
+                                        d="M50 5.66699H3.33333C2.04467 5.66699 1 6.71166 1 8.00033V54.667C1 55.9557 2.04467 57.0003 3.33333 57.0003H50C51.2887 57.0003 52.3333 55.9557 52.3333 54.667V8.00033C52.3333 6.71166 51.2887 5.66699 50 5.66699Z"
+                                        stroke="#1C1F35" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M40.667 1V10.3333" stroke="#1C1F35" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M12.667 1V10.3333" stroke="#1C1F35" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M1 19.667H52.3333" stroke="#1C1F35" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                                <p class="black-heading text-center fs-2 fw-bolder mb-0">
+                                    08
+                                </p>
+                                <o class="para">September</o>
+                            </div>
+                            <div class=" col-9 ps-3">
+                                <p class="black-heading">
+                                    eMAR: An Outstanding Story
+                                </p>
+                                <p class="para text-start">
+                                    Bramley Court has achieved an Outstanding rating from the CQC. This is a remarkable
+                                    accomplishment, with only seven care homes inspected with an overall Outstanding
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-lg-6 col-md-5">
+                            <img src="./assets/images/blog.png" class="w-100" alt="">
+                        </div>
+                        <div class="col-lg-6 col-md-7 d-flex">
+                            <div class=" col-3 blog-date">
+                                <svg width="53" height="58" viewBox="0 0 53 58" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="11" y="28" width="6" height="6" stroke="#1C1F35" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <rect x="11" y="41" width="6" height="6" stroke="#1C1F35" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <rect x="24" y="28" width="6" height="6" stroke="#1C1F35" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <rect x="24" y="41" width="6" height="6" stroke="#1C1F35" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <rect x="36" y="28" width="6" height="6" fill="#39B54A" stroke="#1C1F35"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <rect x="36" y="41" width="6" height="6" stroke="#1C1F35" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M52 20H1V9C1 7.34315 2.34315 6 4 6H49C50.6569 6 52 7.34315 52 9V20Z"
+                                        fill="#39B54A" />
+                                    <path
+                                        d="M50 5.66699H3.33333C2.04467 5.66699 1 6.71166 1 8.00033V54.667C1 55.9557 2.04467 57.0003 3.33333 57.0003H50C51.2887 57.0003 52.3333 55.9557 52.3333 54.667V8.00033C52.3333 6.71166 51.2887 5.66699 50 5.66699Z"
+                                        stroke="#1C1F35" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M40.667 1V10.3333" stroke="#1C1F35" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M12.667 1V10.3333" stroke="#1C1F35" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M1 19.667H52.3333" stroke="#1C1F35" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                                <p class="black-heading text-center fs-2 fw-bolder mb-0">
+                                    08
+                                </p>
+                                <o class="para">September</o>
+                            </div>
+                            <div class=" col-9 ps-3">
+                                <p class="black-heading">
+                                    eMAR: An Outstanding Story
+                                </p>
+                                <p class="para text-start">
+                                    Bramley Court has achieved an Outstanding rating from the CQC. This is a remarkable
+                                    accomplishment, with only seven care homes inspected with an overall Outstanding
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-lg-6 col-md-5">
+                            <img src="./assets/images/blog.png" class="w-100" alt="">
+                        </div>
+                        <div class="col-lg-6 col-md-7 d-flex">
+                            <div class=" col-3 blog-date">
+                                <svg width="53" height="58" viewBox="0 0 53 58" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="11" y="28" width="6" height="6" stroke="#1C1F35" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <rect x="11" y="41" width="6" height="6" stroke="#1C1F35" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <rect x="24" y="28" width="6" height="6" stroke="#1C1F35" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <rect x="24" y="41" width="6" height="6" stroke="#1C1F35" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <rect x="36" y="28" width="6" height="6" fill="#39B54A" stroke="#1C1F35"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <rect x="36" y="41" width="6" height="6" stroke="#1C1F35" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M52 20H1V9C1 7.34315 2.34315 6 4 6H49C50.6569 6 52 7.34315 52 9V20Z"
+                                        fill="#39B54A" />
+                                    <path
+                                        d="M50 5.66699H3.33333C2.04467 5.66699 1 6.71166 1 8.00033V54.667C1 55.9557 2.04467 57.0003 3.33333 57.0003H50C51.2887 57.0003 52.3333 55.9557 52.3333 54.667V8.00033C52.3333 6.71166 51.2887 5.66699 50 5.66699Z"
+                                        stroke="#1C1F35" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M40.667 1V10.3333" stroke="#1C1F35" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M12.667 1V10.3333" stroke="#1C1F35" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M1 19.667H52.3333" stroke="#1C1F35" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                                <p class="black-heading text-center fs-2 fw-bolder mb-0">
+                                    08
+                                </p>
+                                <o class="para">September</o>
+                            </div>
+                            <div class=" col-9 ps-3">
+                                <p class="black-heading">
+                                    eMAR: An Outstanding Story
+                                </p>
+                                <p class="para text-start">
+                                    Bramley Court has achieved an Outstanding rating from the CQC. This is a remarkable
+                                    accomplishment, with only seven care homes inspected with an overall Outstanding
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn primary-btn mt-5 px-md-4">More Blog</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="charity ">
+        <div class="container">
+            <div class="row justify-content-center charity-logo">
+                <div class="col-md-2 col-6">
+                    <img class="w-100" src="./assets/images/ch1 (4).png" alt="">
+                </div>
+                <div class="col-md-2 col-6">
+                    <img class="w-100" src="./assets/images/ch1 (3).png" alt="">
+                </div>
+                <div class="col-md-2 col-6">
+                    <img class="w-100" src="./assets/images/ch1 (2).png" alt="">
+                </div>
+                <div class="col-md-2 col-6">
+                    <img class="w-100" src="./assets/images/ch1 (1).png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="mt-5">
+        <div class="container text-center">
+            <p class="miniheading mx-auto">
+                Our Facebook
+            </p>
+            <p class="heading">
+                @theoutstandingsoceity
+            </p>
+            <div class="row fb-gallery mt-5">
+                <div class="col-md-4 px-0">
+                    <img src="./assets/images/fb1.png" alt="">
+                </div>
+                <div class="col-md-4 px-0">
+                    <img src="./assets/images/fb2.png" alt="">
+                </div>
+                <div class="col-md-4 px-0">
+                    <img src="./assets/images/fb3.png" alt="">
+                </div>
+                <div class="col-md-4 px-0">
+                    <img src="./assets/images/fb3.png" alt="">
+                </div>
+                <div class="col-md-4 px-0">
+                    <img src="./assets/images/fb1.png" alt="">
+                </div>
+                <div class="col-md-4 px-0">
+                    <img src="./assets/images/fb2.png" alt="">
+                </div>
+              
+            </div>
+        </div>
+    </section>
 </body>
+<script>
+    $(".slickbtnprev").on("click", function () {
+        $(".slick-prev").click();
+    });
+    $(".slickbtnnext").on("click", function () {
+        $(".slick-next").click();
+    });
+</script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>

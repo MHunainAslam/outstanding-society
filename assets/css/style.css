@@ -12,6 +12,10 @@
 * {
   font-family: var(--primary-font);
 }
+body {
+  overflow-x: hidden;
+}
+
 .custome-nav-bg {
   position: absolute !important;
   width: 100%;
@@ -132,6 +136,7 @@
   font-size: 40px;
   font-family: var(--secondry-font);
   font-weight: 600;
+  line-height: normal;
 }
 .sponser > div:nth-child(1) {
   border-right: 2px solid var(--light);
@@ -143,6 +148,111 @@
 }
 .green-white {
   background: linear-gradient(90deg, var(--primary) 50%, var(--light) 50%);
+}
+.slider-footer {
+  background-color: var(--primary);
+  padding-block: 30px;
+  padding-inline: 15px;
+  position: relative;
+}
+.slider-footer a {
+  text-decoration: none;
+  color: var(--primary);
+}
+.slider-img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+.slickbtnnext,
+.slickbtnprev {
+  width: 30px;
+  height: 30px;
+  background: linear-gradient(90deg, var(--primary) 20%, var(--secondry) 80%);
+  color: white;
+  border: 0 !important;
+  margin-inline: 5px;
+  border-radius: 100%;
+}
+.slick-prev:before,
+.slick-next:before {
+  color: red;
+  width: 100px;
+}
+.slider-footer h5 {
+  color: var(--secondry-font);
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+.slider-footer p {
+  color: var(--primary-font);
+  color: white;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+.index-slider .slick-slide {
+  padding: 10px;
+}
+.slider-social {
+  background: white;
+  width: fit-content;
+  padding-inline: 15px;
+  padding-block: 10px;
+  color: var(--primary);
+  position: absolute;
+  top: -25px;
+  right: 0;
+}
+.health-social {
+  margin-top: 40px;
+  padding-block: 40px;
+  background: url(../images/Health-and-Social-Care-20.05\ 1.png);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+.health-social .card {
+  background-color: transparent;
+  border: 0 !important;
+  text-align: center;
+}
+.health-social .card img {
+  height: 80px;
+  object-fit: cover;
+}
+.health-social .card p {
+  margin-block: 40px;
+  color: white;
+}
+.black-heading {
+  font-family: var(--secondry-font);
+  text-align: start;
+  font-size: 20px;
+  font-weight: 400;
+}
+.blog-date {
+  border-right: 3px solid var(--light);
+}
+.charity {
+  background: url(../images/charity.png);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  background-repeat: no-repeat;
+  padding-block: 50px;
+  margin-top: 50px;
+}
+.charity-logo img {
+  height: 150px;
+  object-fit: contain;
+}
+.fb-gallery img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
 }
 @media (max-width: 992px) {
   .custome-nav p {
@@ -162,5 +272,8 @@
   }
   .heading {
     font-size: 30px;
+  }
+  .green-white {
+    background: linear-gradient(180deg, var(--primary) 20%, var(--light) 20%);
   }
 }
