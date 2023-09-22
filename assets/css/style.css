@@ -4,7 +4,10 @@
   --primary-font: "Krub", sans-serif;
   --secondry-font: "Rubik", sans-serif;
   --primary: #39b94b;
+  --gradient: 45deg, var(--primary), var(--secondry);
   --secondry: #5ee971;
+  --light: rgba(232, 232, 232, 0.5);
+  --dark: #666c89;
 }
 * {
   font-family: var(--primary-font);
@@ -78,7 +81,8 @@
 }
 .para {
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
+  color: var(--dark);
 }
 .primary-btn {
   background: linear-gradient(45deg, var(--primary), var(--secondry));
@@ -129,6 +133,17 @@
   font-family: var(--secondry-font);
   font-weight: 600;
 }
+.sponser > div:nth-child(1) {
+  border-right: 2px solid var(--light);
+}
+.heading-sm {
+  font-family: var(--secondry-font);
+  font-size: 22px;
+  font-weight: 400;
+}
+.green-white {
+  background: linear-gradient(90deg, var(--primary) 50%, var(--light) 50%);
+}
 @media (max-width: 992px) {
   .custome-nav p {
     display: none;
@@ -144,5 +159,8 @@
   .banner-heading {
     font-size: 35px;
     line-height: normal;
+  }
+  .heading {
+    font-size: 30px;
   }
 }
