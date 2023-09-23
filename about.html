@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+    <script type="text/javascript">
+        $(document).on("ready", function () {
+            $(".regular").slick({
+                arrows: true,
+                infinite: true,
+                leftMode: true,
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                responsive: [
+                    {
+                        breakpoint: 1200,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 1,
+                        },
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1,
+                        },
+                    },
+                    {
+                        breakpoint: 400,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                        },
+                    },
+                ],
+            });
+        });
+    </script>
+    <title>Document</title>
+</head>
+
+<body>
+    <section>
+        <div class="top-header d-lg-flex d-none">
+            <img src="./assets/images/Logo 1.png" alt="" />
+        </div>
+        <nav class="navbar navbar-expand-lg custome-nav-bg" aria-label="Offcanvas navbar large">
+            <div class="container-xl container-fluid">
+                <a class="navbar-brand d-lg-none" href="#">
+                    <img src="./assets/images/white.png" alt="" class="header-logo" /></a>
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2">
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                    <i class="bi bi-list text-white fs-1"></i>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar2"
+                    aria-labelledby="offcanvasNavbar2Label">
+                    <div class="offcanvas-header justify-content-end">
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body d-lg-flex justify-content-between">
+                        <ul class="navbar-nav justify-content-start flex-grow-1 pe-3 align-items-center custome-nav">
+                            <li class="nav-item">
+                                <a class="nav-link " aria-current="page" href="./index.html">Home</a>
+                            </li>
+                            <p>|</p>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="./about.html">About</a>
+                            </li>
+                            <p>|</p>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./vilvaldi.html">Vilvaldi</a>
+                            </li>
+                            <p>|</p>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Social Care</a>
+                            </li>
+                            <p>|</p>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">SCNACs</a>
+                            </li>
+                            <p>|</p>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">OS Forum</a>
+                            </li>
+                            <p>|</p>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Sustainability</a>
+                            </li>
+                            <p>|</p>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                            <p>|</p>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">News</a>
+                            </li>
+                            <p>|</p>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Stakeholders</a>
+                            </li>
+                        </ul>
+                        <div class="header-social">
+                            <a class="nav-link" href="#"><i class="bi bi-instagram"></i></a>
+                            <a class="nav-link" href="#"><i class="bi bi-facebook"></i></a>
+                            <a class="nav-link" href="#"><i class="bi bi-twitter"></i></a>
+                            <a class="nav-link" href="#"><i class="bi bi-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <section class="banner">
+        <img src="./assets/images/01621_Health_Social_Care_553x400_A-8b9beacee86efa93291ac898cdbd8dcb 1.png" alt="">
+        <div class="container banner-text">
+            <div class="col-lg-6">
+                <div class="miniheading">About Us</div>
+                <br />
+                <p class="banner-heading text-white">
+                    Who Are We
+                </p>
+
+            </div>
+        </div>
+    </section>
+    <section class="mt-5">
+        <div class="container">
+            <video controls poster="./assets/images/Social_Care_Blog_Header_1500x750 1.png" class="video">
+                <source src="./assets/images/WhatsApp Video 2023-09-22 at 02.47.18.mp4" type="video/mp4" />
+                <source src="movie.ogg" type="video/ogg" />
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+    <section class="light-bg mt-5">
+        <div class="container py-5">
+            <p class="miniheading">
+                About
+            </p>
+            <p class="heading">
+                Our Story
+            </p>
+            <p class="mt-4 para">
+                he Outstanding Society was the idea of Camilla Trimble who owned a Care Home in Dorset.
+                <br>
+                Having achieved an Outstanding CQC rating Camilla identified other like minded ‘Outstanding’ providers
+                to promote
+                sharing best practice within adult social care throughout England. The core team was formed of Camilla
+                Trimble, James Rycroft, Russell Leese and Zoe Fry.
+                <br>
+                There have been several conferences since the
+                Society’s formation (please see our Gallery page) and we have been extremely honoured to have welcomed
+                the following speakers.
+                <br>
+            <ul>
+                <li> Professor Martin Green OBE – Chief Executive of Care England </li>
+                <li>Andrea Sutcliffe
+                    CBE – former CQC Chief Inspector of Adult Social Care and now Chief Executive of the Nursing and
+                    Midwifery Council </li>
+                <li> Kate Terroni – CQC Chief Inspector of Adult Social Care.</li>
+                <li> Sharon Allen OBE – CEO Skills
+                    for Care 2010-2019</li>
+                <li> Avnish Goyal – Chair Care England</li>
+                <li> Rob Hargreaves – Skills for Care Information
+                    Service Manager</li>
+                <li> Alex Ramamurthy – Founder/CEO at Mirthy </li>
+                <li> Wendy Mitchell – Author of ‘Someone I used to
+                    know’</li>
+            </ul>
+            The Society wishes to thank Camilla Trimble for her commitment in setting up the OS back in 2014.
+            Camilla is no longer involved with the Society, but we would like to acknowledge the immense
+            contribution she made.
+            <br>
+            Like most Health Care Professionals during the early months of COVID meant that
+            the Outstanding Society ‘hibernated’ but throughout they continued to explore ways of developing the
+            group and attend virtual Trade Association meetings with the Care Quality Commission. 
+            <br>
+            In 2021 we formed
+            the OS into a Community Interest Company and in 2022 welcomed new Directors to the Board.
+            <br>
+            Since April
+            2021 we have held virtual monthly meetings with some fantastic key note speakers. <br> The Society welcomes
+            all providers to sign up to be a member and encourages Outstanding Providers to become Contributors to
+            the OS.
+            </p>
+        </div>
+    </section>
+    <section class="mt-5">
+        <div class="container">
+            <p class="miniheading">The Team</p>
+            <div class="d-flex justify-content-between align-content-center">
+                <p class="heading w-auto">Meet The Team</p>
+                <div class="d-flex">
+                    <button class="slickbtnprev">
+                        <i class="bi bi-arrow-left"></i>
+                    </button>
+                    <button class="slickbtnnext">
+                        <i class="bi bi-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="regular index-slider ">
+        <div>
+            <div class="position-relative d-flex justify-content-center align-items-center">
+                <img src="./assets/images/photo.png" class="slider-img" alt="" />
+                <img src="./assets/images/Polygon 2.png" class="position-absolute" alt="" />
+            </div>
+            <div class="slider-footer">
+                <h5>Jessca Arow</h5>
+                <p>Designer</p>
+                <div class="slider-social">
+                    <a href="">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="position-relative d-flex justify-content-center align-items-center">
+                <img src="./assets/images/photo.png" class="slider-img" alt="" />
+                <img src="./assets/images/Polygon 2.png" class="position-absolute" alt="" />
+            </div>
+            <div class="slider-footer">
+                <h5>Jessca Arow</h5>
+                <p>Designer</p>
+                <div class="slider-social">
+                    <a href="">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="position-relative d-flex justify-content-center align-items-center">
+                <img src="./assets/images/photo.png" class="slider-img" alt="" />
+                <img src="./assets/images/Polygon 2.png" class="position-absolute" alt="" />
+            </div>
+            <div class="slider-footer">
+                <h5>Jessca Arow</h5>
+                <p>Designer</p>
+                <div class="slider-social">
+                    <a href="">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="position-relative d-flex justify-content-center align-items-center">
+                <img src="./assets/images/photo.png" class="slider-img" alt="" />
+                <img src="./assets/images/Polygon 2.png" class="position-absolute" alt="" />
+            </div>
+            <div class="slider-footer">
+                <h5>Jessca Arow</h5>
+                <p>Designer</p>
+                <div class="slider-social">
+                    <a href="">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="position-relative d-flex justify-content-center align-items-center">
+                <img src="./assets/images/photo.png" class="slider-img" alt="" />
+                <img src="./assets/images/Polygon 2.png" class="position-absolute" alt="" />
+            </div>
+            <div class="slider-footer">
+                <h5>Jessca Arow</h5>
+                <p>Designer</p>
+                <div class="slider-social">
+                    <a href="">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="position-relative d-flex justify-content-center align-items-center">
+                <img src="./assets/images/photo.png" class="slider-img" alt="" />
+                <img src="./assets/images/Polygon 2.png" class="position-absolute" alt="" />
+            </div>
+            <div class="slider-footer">
+                <h5>Jessca Arow</h5>
+                <p>Designer</p>
+                <div class="slider-social">
+                    <a href="">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="position-relative d-flex justify-content-center align-items-center">
+                <img src="./assets/images/photo.png" class="slider-img" alt="" />
+                <img src="./assets/images/Polygon 2.png" class="position-absolute" alt="" />
+            </div>
+            <div class="slider-footer">
+                <h5>Jessca Arow</h5>
+                <p>Designer</p>
+                <div class="slider-social">
+                    <a href="">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="position-relative d-flex justify-content-center align-items-center">
+                <img src="./assets/images/photo.png" class="slider-img" alt="" />
+                <img src="./assets/images/Polygon 2.png" class="position-absolute" alt="" />
+            </div>
+            <div class="slider-footer">
+                <h5>Jessca Arow</h5>
+                <p>Designer</p>
+                <div class="slider-social">
+                    <a href="">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="mt-5">
+        <div class="container text-center">
+            <p class="miniheading mx-auto">
+                Our Facebook
+            </p>
+            <p class="heading">
+                @theoutstandingsoceity
+            </p>
+            <div class="row fb-gallery mt-5">
+                <div class="col-md-4 px-0">
+                    <img src="./assets/images/fb1.png" alt="">
+                </div>
+                <div class="col-md-4 px-0">
+                    <img src="./assets/images/fb2.png" alt="">
+                </div>
+                <div class="col-md-4 px-0">
+                    <img src="./assets/images/fb3.png" alt="">
+                </div>
+                <div class="col-md-4 px-0">
+                    <img src="./assets/images/fb3.png" alt="">
+                </div>
+                <div class="col-md-4 px-0">
+                    <img src="./assets/images/fb1.png" alt="">
+                </div>
+                <div class="col-md-4 px-0">
+                    <img src="./assets/images/fb2.png" alt="">
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="charity ">
+        <div class="container">
+            <div class="row justify-content-center charity-logo">
+                <div class="col-md-2 col-6">
+                    <img class="w-100" src="./assets/images/ch1 (4).png" alt="">
+                </div>
+                <div class="col-md-2 col-6">
+                    <img class="w-100" src="./assets/images/ch1 (3).png" alt="">
+                </div>
+                <div class="col-md-2 col-6">
+                    <img class="w-100" src="./assets/images/ch1 (2).png" alt="">
+                </div>
+                <div class="col-md-2 col-6">
+                    <img class="w-100" src="./assets/images/ch1 (1).png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer-heading  d-lg-block d-none">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 col-lg-4 py-3 secomdary-bg text-center">
+                    <img src="./assets/images/white.png" alt="">
+                </div>
+                <div class="col-md-6 col-lg ps-5 py-3">
+                    <p>Pages</p>
+                </div>
+                <div class="col-md-6 col-lg py-3">
+                    <p>Utility</p>
+                </div>
+                <div class="col-md-6 col-lg-4 py-3">
+                    <p>Subscribe</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer pt-5 mt-lg-0 mt-5">
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-4 footer-logo-sec">
+                        <div class="d-lg-none text-center mb-3 d-flex justify-content-center">
+                            <img src="./assets/images/white.png" alt="">
+                        </div>
+                        <p class="para text-white mb-5 text-center text-lg-start">The Outstanding Society Community
+                            Interest Company is a limited
+                            company
+                            registered in England and Wales.</p>
+                        <div class="d-flex align-items-center mb-4">
+                            <!-- <div class="footer-social"><i class="bi bi-envelope"></i></div> -->
+                            <img src="./assets/images/email.icon.png" class="footer-social" alt="">
+                            <div class="ps-2">
+                                <p class="para">
+                                    Email
+                                </p>
+                                <a href="mailto:info@theoutstandingsociety.co.uk">info@theoutstandingsociety.co.uk</a>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center mb-4">
+                            <!-- <div class="footer-social"><i class="bi bi-envelope"></i></div> -->
+                            <img src="./assets/images/call.Icon.png" class="footer-social" alt="">
+                            <div class="ps-2">
+                                <p class="para">
+                                    Call Us
+                                </p>
+                                <a href="tel:00112365489">(00) 112 365 489</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-6 col-lg footer-url text-center text-lg-start">
+                        <p class=" f-heading my-5 d-lg-none">
+                            Pages</p>
+                        <ul>
+                            <li><a href="./about.html">About us</a></li>
+                            <li><a href="#">Out Team</a></li>
+                            <li><a href="#">Out project</a></li>
+                            <li><a href="#">pricing</a></li>
+                            <li><a href="#">contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 col-lg footer-url text-center text-lg-start">
+                        <p class=" f-heading my-5 d-lg-none">
+                            Utility</p>
+                        <ul>
+                            <li><a href="#">Style Guide</a></li>
+                            <li><a href="#">Changelog</a></li>
+                            <li><a href="#">Licenses</a></li>
+                            <li><a href="#">Protected</a></li>
+                            <li><a href="#"> Not Found</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 col-lg-4 text-center text-lg-start"">
+                        <p class=" f-heading my-5 d-lg-none">
+                        Subscribe</p>
+                        <form action="">
+                            <input type="text" class="form-control subs">
+                            <div class="d-flex mt-3 align-items-center">
+                                <div class="col-6">
+                                    <button class="btn primary-btn footer-btn w-100">Send Now</button>
+                                </div>
+                                <div class="col-6">
+                                    <div class="footer-social-2 justify-content-between px-5 my-auto">
+                                        <a class="nav-link" href="#"><i class="bi bi-linkedin"></i></a>
+                                        <a class="nav-link" href="#"><i class="bi bi-twitter"></i></a>
+                                        <a class="nav-link" href="#"><i class="bi bi-facebook"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="footerline"></div>
+        <p class="para m-0 text-center text-white py-3">Copyright © 2023 – The Outstanding Society Community Interest
+            Company</p>
+    </section>
+</body>
+<script>
+    $(".slickbtnprev").on("click", function () {
+        $(".slick-prev").click();
+    });
+    $(".slickbtnnext").on("click", function () {
+        $(".slick-next").click();
+    });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+</html>
