@@ -4,21 +4,21 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./assets/css/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+
     <script type="text/javascript">
         $(document).on("ready", function () {
             $(".regular").slick({
                 arrows: true,
-                infinite: true,
                 slidesToShow: 5,
+                infinite: false,
+                centerMode: true,
                 slidesToScroll: 1,
                 responsive: [
                     {
@@ -49,12 +49,13 @@
     <title>Document</title>
 </head>
 
+
 <body>
     <section>
         <div class="top-header d-lg-flex d-none">
             <img src="./assets/images/Logo 1.png" alt="" />
         </div>
-        <nav class="navbar navbar-expand-lg custome-nav-bg" aria-label="Offcanvas navbar large">
+        <nav class="navbar navbar-expand-lg custome-nav-bg py-0" aria-label="Offcanvas navbar large">
             <div class="container-xl container-fluid">
                 <a class="navbar-brand d-lg-none" href="#">
                     <img src="./assets/images/white.png" alt="" class="header-logo" /></a>
@@ -123,7 +124,7 @@
         </nav>
     </section>
     <section class="index-banner">
-        <video controls poster="./assets/images/banner.png">
+        <video  poster="./assets/images/banner.png">
             <source src="./assets/images/WhatsApp Video 2023-09-22 at 02.47.18.mp4" type="video/mp4" />
             <source src="movie.ogg" type="video/ogg" />
             Your browser does not support the video tag.
@@ -136,7 +137,7 @@
                     your getway <br />
                     pure social care
                 </p>
-                <p class="para">
+                <p class="para text-black">
                     In augue ligula, feugiat ut nulla consequat. Ut est lacus, molestie
                     in arcu no, iaculis vehicula ipsum. Nunc faucibus, nisl id dapibus
                     finibus, enim diam interdum nulla, sed laoreet risus lectus.
@@ -150,7 +151,7 @@
             <div class="row">
                 <div class="col-lg-4">
                     <div class="miniheading">Our Sponsors</div>
-                    <p class="heading mt-3">
+                    <p class="heading mt-3 pe-lg-5">
                         extremely grateful for the following organisations
                     </p>
                 </div>
@@ -228,12 +229,12 @@
                     <img src="./assets/images/Image.png" class="w-100" alt="" />
                 </div>
 
-                <div class="col-md-5 col-md-4 my-md-auto mt-5">
+                <div class="col-md-5 ps-md-4 pe-md-5 col-md-4 my-md-auto mt-5">
                     <p class="miniheading">Why Choose</p>
                     <div class="heading">
                         Sharing and Celebrating Best practice in Social Care
                     </div>
-                    <p class="para mt-3">
+                    <p class="para mt-3 ">
                         In 2021 the Outstanding Society (OS) was set up as a Community
                         Interest Company (CIC). This was to provide a platform to share
                         and celebrate best practice whilst helping others to improve and
@@ -268,7 +269,7 @@
             </div>
         </div>
     </section>
-    <section class="regular index-slider">
+    <section class="regular index-slider ">
         <div>
             <div class="position-relative d-flex justify-content-center align-items-center">
                 <img src="./assets/images/photo.png" class="slider-img" alt="" />
@@ -466,7 +467,7 @@
                         </div>
                         <div class="col-lg-6 col-md-7 d-flex">
                             <div class=" col-3 blog-date">
-                                <svg width="43" height="48" viewBox="0 0 53 58" fill="none"
+                                <svg width="43" height="48" viewBox="0 0 53 58" fill="none" class=" mx-auto"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <rect x="11" y="28" width="6" height="6" stroke="#1C1F35" stroke-linecap="round"
                                         stroke-linejoin="round" />
@@ -514,7 +515,7 @@
                         </div>
                         <div class="col-lg-6 col-md-7 d-flex">
                             <div class=" col-3 blog-date">
-                                <svg width="53" height="58" viewBox="0 0 53 58" fill="none"
+                                <svg width="53" height="58" viewBox="0 0 53 58" fill="none" class=" mx-auto"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <rect x="11" y="28" width="6" height="6" stroke="#1C1F35" stroke-linecap="round"
                                         stroke-linejoin="round" />
@@ -562,7 +563,7 @@
                         </div>
                         <div class="col-lg-6 col-md-7 d-flex">
                             <div class=" col-3 blog-date">
-                                <svg width="53" height="58" viewBox="0 0 53 58" fill="none"
+                                <svg width="53" height="58" viewBox="0 0 53 58" fill="none" class=" mx-auto"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <rect x="11" y="28" width="6" height="6" stroke="#1C1F35" stroke-linecap="round"
                                         stroke-linejoin="round" />
@@ -604,7 +605,7 @@
                             </div>
                         </div>
                     </div>
-                    <button class="btn primary-btn mt-5 px-md-4">More Blog</button>
+                    <button class="btn primary-btn mt-5 ">More Blog</button>
                 </div>
             </div>
         </div>
@@ -612,16 +613,16 @@
     <section class="charity ">
         <div class="container">
             <div class="row justify-content-center charity-logo">
-                <div class="col-md-2 col-6">
+                <div class="col-md-3 col-6">
                     <img class="w-100" src="./assets/images/ch1 (4).png" alt="">
                 </div>
-                <div class="col-md-2 col-6">
+                <div class="col-md-3 col-6">
                     <img class="w-100" src="./assets/images/ch1 (3).png" alt="">
                 </div>
-                <div class="col-md-2 col-6">
+                <div class="col-md-3 col-6">
                     <img class="w-100" src="./assets/images/ch1 (2).png" alt="">
                 </div>
-                <div class="col-md-2 col-6">
+                <div class="col-md-3 col-6">
                     <img class="w-100" src="./assets/images/ch1 (1).png" alt="">
                 </div>
                 <p class="para text-center fw-normal mt-4 text-white">Proud to work with Care England, The Care Workers' Charity, Skills for Care & The Care Show</p>
@@ -640,20 +641,22 @@
                 <div class="col-md-4 px-0">
                     <img src="./assets/images/fb1.png" alt="">
                 </div>
+              
+                <div class="col-md-4 px-0">
+                    <img src="./assets/images/fb3.png" alt="">
+                </div>
                 <div class="col-md-4 px-0">
                     <img src="./assets/images/fb2.png" alt="">
                 </div>
                 <div class="col-md-4 px-0">
-                    <img src="./assets/images/fb3.png" alt="">
+                    <img src="./assets/images/fb2.png" alt="">
                 </div>
-                <div class="col-md-4 px-0">
-                    <img src="./assets/images/fb3.png" alt="">
-                </div>
+                
                 <div class="col-md-4 px-0">
                     <img src="./assets/images/fb1.png" alt="">
                 </div>
                 <div class="col-md-4 px-0">
-                    <img src="./assets/images/fb2.png" alt="">
+                    <img src="./assets/images/fb3.png" alt="">
                 </div>
 
             </div>
@@ -679,7 +682,7 @@
     </section>
     <section class="footer pt-5 mt-lg-0 mt-5">
         <footer>
-            <div class="container">
+            <div class="container mb-5">
                 <div class="row">
                     <div class="col-md-6 col-lg-4 footer-logo-sec">
                         <div  class="d-lg-none text-center mb-3 d-flex justify-content-center">
