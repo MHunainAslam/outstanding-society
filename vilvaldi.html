@@ -4,22 +4,21 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./assets/css/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+
     <script type="text/javascript">
         $(document).on("ready", function () {
             $(".regular").slick({
                 arrows: true,
-                infinite: true,
-                leftMode: true,
                 slidesToShow: 5,
+                infinite: false,
+                centerMode: true,
                 slidesToScroll: 1,
                 responsive: [
                     {
@@ -55,7 +54,7 @@
         <div class="top-header d-lg-flex d-none">
             <img src="./assets/images/Logo 1.png" alt="" />
         </div>
-        <nav class="navbar navbar-expand-lg custome-nav-bg" aria-label="Offcanvas navbar large">
+        <nav class="navbar navbar-expand-lg custome-nav-bg py-0" aria-label="Offcanvas navbar large">
             <div class="container-xl container-fluid">
                 <a class="navbar-brand d-lg-none" href="#">
                     <img src="./assets/images/white.png" alt="" class="header-logo" /></a>
@@ -129,7 +128,7 @@
             <div class="col-lg-6">
                 <div class="miniheading">Resources</div>
                 <br />
-                <p class="banner-heading text-white">
+                <p class="banner-heading-2 text-white">
                     VIVALDI – Reducing infections and improving lives.
                 </p>
 
@@ -166,55 +165,137 @@
             <p class="heading text-center ">
                 Engagement & Communication <br> Workstream
             </p>
- 
-        <div class="holder">
-            <div class="audio green-audio-player">
-                <div class="loading">
-                    <div class="spinner"></div>
-                </div>
-                <div class="play-pause-btn">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="24" viewBox="0 0 18 24">
-                        <path fill="#566574" fill-rule="evenodd" d="M18 12L0 24V0" class="play-pause-icon"
-                            id="playPause" />
-                    </svg>
-                </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="holder">
 
-                <div class="controls">
-                    <span class="current-time">0:00</span>
-                    <div class="slider" data-direction="horizontal">
-                        <div class="progress">
-                            <div class="pin" id="progress-pin" data-method="rewind"></div>
-                        </div>
-                    </div>
-                    <span class="total-time">0:00</span>
-                </div>
-
-                <div class="volume">
-                    <div class="volume-btn">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                            <path fill="#566574" fill-rule="evenodd"
-                                d="M14.667 0v2.747c3.853 1.146 6.666 4.72 6.666 8.946 0 4.227-2.813 7.787-6.666 8.934v2.76C20 22.173 24 17.4 24 11.693 24 5.987 20 1.213 14.667 0zM18 11.693c0-2.36-1.333-4.386-3.333-5.373v10.707c2-.947 3.333-2.987 3.333-5.334zm-18-4v8h5.333L12 22.36V1.027L5.333 7.693H0z"
-                                id="speaker" />
-                        </svg>
-                    </div>
-                    <div class="volume-controls hidden">
-                        <div class="slider" data-direction="vertical">
-                            <div class="progress">
-                                <div class="pin" id="volume-pin" data-method="changeVolume"></div>
+                        <div class="audio green-audio-player">
+                            <div class="px-4 audio-name">
+                                <div class="d-flex mb-3">
+                                    <div class="">
+                                        <img src="./assets/images/Ellipse 44.png" class="" alt="">
+                                    </div>
+                                    <div class="my-auto ms-3">
+                                        <p class="para ">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                                        <p class="heading">Lorem ipsum dolor</p>
+                                    </div>
+                                </div>
                             </div>
+                            <!-- <div class="loading">
+                            <div class="spinner"></div>
+                        </div> -->
+                            <div class="controls">
+                                <!-- <span class="current-time">0:00</span> -->
+                                <div class="slider" data-direction="horizontal">
+                                    <div class="progress">
+                                        <div class="pin" id="progress-pin" data-method="rewind"></div>
+                                    </div>
+                                </div>
+                                <!-- <span class="total-time">0:00</span> -->
+                            </div>
+
+                            <div class="d-flex justify-content-between align-items-center px-4 mt-2">
+
+                                <div class="volume">
+                                    <div class="volume-btn">
+                                        <i class="bi bi-volume-up-fill text-white fs-5"></i>
+                                    </div>
+                                    <div class="volume-controls hidden">
+                                        <div class="slider" data-direction="vertical">
+                                            <div class="progress">
+                                                <div class="pin" id="volume-pin" data-method="changeVolume"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="play-pause-btn align-items-center d-flex">
+                                    <i class="bi bi-skip-start-fill text-white fs-4 my-auto me-2"></i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="24" viewBox="0 0 18 24">
+                                        <path fill="white" fill-rule="evenodd" d="M18 12L0 24V0"
+                                            class="play-pause-icon mx-4" id="playPause" />
+                                    </svg>
+                                    <i class="bi bi-skip-end-fill text-white fs-4 my-auto ms-2"></i>
+                                </div>
+                                <div class="volume">
+                                    <i class="bi bi-repeat text-white fs-5"></i>
+                                </div>
+                            </div>
+
+                            <audio crossorigin>
+                                <source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/355309/Swing_Jazz_Drum.mp3"
+                                    type="audio/mpeg">
+                            </audio>
                         </div>
                     </div>
                 </div>
+                <div class="col-md-6">
+                    <div class="holder">
 
-                <audio crossorigin>
-                    <source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/355309/Swing_Jazz_Drum.mp3"
-                        type="audio/mpeg">
-                </audio>
+                        <div class="audio green-audio-player">
+                            <div class="px-4 audio-name">
+                                <div class="d-flex mb-3">
+                                    <div class="">
+                                        <img src="./assets/images/Ellipse 44.png" class="" alt="">
+                                    </div>
+                                    <div class="my-auto ms-3">
+                                        <p class="para ">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                                        <p class="heading">Lorem ipsum dolor</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="loading">
+                            <div class="spinner"></div>
+                        </div> -->
+                            <div class="controls">
+                                <!-- <span class="current-time">0:00</span> -->
+                                <div class="slider" data-direction="horizontal">
+                                    <div class="progress">
+                                        <div class="pin" id="progress-pin" data-method="rewind"></div>
+                                    </div>
+                                </div>
+                                <!-- <span class="total-time">0:00</span> -->
+                            </div>
+
+                            <div class="d-flex justify-content-between align-items-center px-4 mt-2">
+
+                                <div class="volume">
+                                    <div class="volume-btn">
+                                        <i class="bi bi-volume-up-fill text-white fs-5"></i>
+                                    </div>
+                                    <div class="volume-controls hidden">
+                                        <div class="slider" data-direction="vertical">
+                                            <div class="progress">
+                                                <div class="pin" id="volume-pin" data-method="changeVolume"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="play-pause-btn align-items-center d-flex">
+                                    <i class="bi bi-skip-start-fill text-white fs-4 my-auto me-2"></i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="24" viewBox="0 0 18 24">
+                                        <path fill="white" fill-rule="evenodd" d="M18 12L0 24V0"
+                                            class="play-pause-icon mx-4" id="playPause" />
+                                    </svg>
+                                    <i class="bi bi-skip-end-fill text-white fs-4 my-auto ms-2"></i>
+                                </div>
+                                <div class="volume">
+                                    <i class="bi bi-repeat text-white fs-5"></i>
+                                </div>
+                            </div>
+
+                            <audio crossorigin>
+                                <source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/355309/Swing_Jazz_Drum.mp3"
+                                    type="audio/mpeg">
+                            </audio>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        </div>
     </section>
-    <section class="vivaldi-sponser">
+    <section class="vivaldi-sponser ">
         <div class="container">
             <div class="col-md-11 mx-auto">
                 <div class="row justify-content-center">
@@ -264,6 +345,150 @@
         </div>
 
     </section>
+
+    <section class="mt-5 pt-5">
+        <div class="container overflow-auto">
+            <div class="findout">
+                <div class="d-flex">
+                    <div class="col-4 pe-3">
+                        <div class="table-head">
+                            <p class="heading">
+                                Visit
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-8 ps-3">
+                        <div class="table-head">
+                            <p class="heading">
+                                Click below links to find out more.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div class="col-4 pe-3">
+                        <div class="table-b">
+                            <p class="para">
+                                March 2023
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-8 ps-3">
+                        <div class="table-b">
+                            <p class="para">
+                                Glentworth House Nursing Home
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div class="col-4 pe-3">
+                        <div class="table-b">
+                            <p class="para">
+                                March 2023
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-8 ps-3">
+                        <div class="table-b">
+                            <p class="para">
+                                Glentworth House Nursing Home
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div class="col-4 pe-3">
+                        <div class="table-b">
+                            <p class="para">
+                                March 2023
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-8 ps-3">
+                        <div class="table-b">
+                            <p class="para">
+                                Glentworth House Nursing Home
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div class="col-4 pe-3">
+                        <div class="table-b">
+                            <p class="para">
+                                March 2023
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-8 ps-3">
+                        <div class="table-b">
+                            <p class="para">
+                                Glentworth House Nursing Home
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div class="col-4 pe-3">
+                        <div class="table-b">
+                            <p class="para">
+                                March 2023
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-8 ps-3">
+                        <div class="table-b">
+                            <p class="para">
+                                Glentworth House Nursing Home
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="feedback">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="./assets/images/Deb_Sturdy_Speaker 1.png" alt="">
+                </div>
+                <div class="col-md-8 feedback-text position-relative my-auto">
+                    <p class="para text-black ps-md-5 mt-md-0 mt-5 text-md-start text-center">
+                        “The launch of social care nursing advisory councils across England was an exciting moment for
+                        our profession. These forums now act as touchstones for every ICB (Integrated Care Board) nurse,
+                        making sure social care nursing and the wider workforce are included in the development of
+                        nursing plans across all health and care settings. These peer advisory groups bring a wealth of
+                        experience, insight and expertise to the table, better informing the development of nursing
+                        practice, system-wide.”
+                    </p>
+                    <p class="para text-black ps-md-5 feedback-name text-md-start text-center">
+                        -Prof Deborah Sturdy.
+                    </p>
+                </div>
+            </div>
+            <div class="row row flex-row-reverse mt-5">
+                <div class="col-md-4">
+                    <img src="./assets/images/Deb_Sturdy_Speaker 1.png" alt="">
+                </div>
+                <div class="col-md-8 feedback-text feedback-text-2 position-relative my-auto">
+                    <p class="para text-black ps-md-5 mt-md-0 mt-5 text-md-start text-center">
+                        “The launch of social care nursing advisory councils across England was an exciting moment for
+                        our profession. These forums now act as touchstones for every ICB (Integrated Care Board) nurse,
+                        making sure social care nursing and the wider workforce are included in the development of
+                        nursing plans across all health and care settings. These peer advisory groups bring a wealth of
+                        experience, insight and expertise to the table, better informing the development of nursing
+                        practice, system-wide.”
+                    </p>
+                    <p class="para text-black ps-md-5 feedback-name text-md-start text-center">
+                        -Prof Deborah Sturdy.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="mt-5">
         <div class="container">
             <div class="row">
@@ -277,8 +502,10 @@
                         </p>
                         <div class="col-md-3">
                             <div class="input-group mb-3 border">
-                                <input type="text" class="form-control  border-0" aria-label="" placeholder="search here">
-                                <span class="input-group-text bg-transparent border-0"><i class="bi bi-search"></i></span>
+                                <input type="text" class="form-control  border-0" aria-label=""
+                                    placeholder="search here">
+                                <span class="input-group-text bg-transparent border-0"><i
+                                        class="bi bi-search"></i></span>
                             </div>
                         </div>
                     </div>
@@ -427,13 +654,161 @@
                             </div>
                         </div>
                     </div>
-                    <button class="btn primary-btn mt-5 px-md-4">More Blog</button>
+                  
 
 
+                </div>
+                <div class="col-md-4">
+                    <div class="holder side-audio">
+
+                        <div class="audio green-audio-player">
+                            <div class="px-4 audio-name">
+                                <div class="d-flex mb-3">
+                                    <div class="">
+                                        <img src="./assets/images/Ellipse 44.png" class="" alt="">
+                                    </div>
+                                    <div class="my-auto ms-3">
+                                        <p class="para ">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                                        <p class="heading">Lorem ipsum dolor</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="loading">
+                            <div class="spinner"></div>
+                        </div> -->
+                            <div class="controls">
+                                <!-- <span class="current-time">0:00</span> -->
+                                <div class="slider" data-direction="horizontal">
+                                    <div class="progress">
+                                        <div class="pin" id="progress-pin" data-method="rewind"></div>
+                                    </div>
+                                </div>
+                                <!-- <span class="total-time">0:00</span> -->
+                            </div>
+
+                            <div class="d-flex justify-content-between align-items-center px-4 mt-2">
+
+                                <div class="volume">
+                                    <div class="volume-btn">
+                                        <i class="bi bi-volume-up-fill text-white fs-5"></i>
+                                    </div>
+                                    <div class="volume-controls hidden">
+                                        <div class="slider" data-direction="vertical">
+                                            <div class="progress">
+                                                <div class="pin" id="volume-pin" data-method="changeVolume"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="play-pause-btn align-items-center d-flex">
+                                    <i class="bi bi-skip-start-fill text-white fs-4 my-auto me-2"></i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="24" viewBox="0 0 18 24">
+                                        <path fill="white" fill-rule="evenodd" d="M18 12L0 24V0"
+                                            class="play-pause-icon mx-4" id="playPause" />
+                                    </svg>
+                                    <i class="bi bi-skip-end-fill text-white fs-4 my-auto ms-2"></i>
+                                </div>
+                                <div class="volume">
+                                    <i class="bi bi-repeat text-white fs-5"></i>
+                                </div>
+                            </div>
+
+                            <audio crossorigin>
+                                <source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/355309/Swing_Jazz_Drum.mp3"
+                                    type="audio/mpeg">
+                            </audio>
+                        </div>
+
+                    </div>
+                    <div class="holder side-audio">
+
+                        <div class="audio green-audio-player">
+                            <div class="px-4 audio-name">
+                                <div class="d-flex mb-3">
+                                    <div class="">
+                                        <img src="./assets/images/Ellipse 44.png" class="" alt="">
+                                    </div>
+                                    <div class="my-auto ms-3">
+                                        <p class="para ">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                                        <p class="heading">Lorem ipsum dolor</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="loading">
+                            <div class="spinner"></div>
+                        </div> -->
+                            <div class="controls">
+                                <!-- <span class="current-time">0:00</span> -->
+                                <div class="slider" data-direction="horizontal">
+                                    <div class="progress">
+                                        <div class="pin" id="progress-pin" data-method="rewind"></div>
+                                    </div>
+                                </div>
+                                <!-- <span class="total-time">0:00</span> -->
+                            </div>
+
+                            <div class="d-flex justify-content-between align-items-center px-4 mt-2">
+
+                                <div class="volume">
+                                    <div class="volume-btn">
+                                        <i class="bi bi-volume-up-fill text-white fs-5"></i>
+                                    </div>
+                                    <div class="volume-controls hidden">
+                                        <div class="slider" data-direction="vertical">
+                                            <div class="progress">
+                                                <div class="pin" id="volume-pin" data-method="changeVolume"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="play-pause-btn align-items-center d-flex">
+                                    <i class="bi bi-skip-start-fill text-white fs-4 my-auto me-2"></i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="24" viewBox="0 0 18 24">
+                                        <path fill="white" fill-rule="evenodd" d="M18 12L0 24V0"
+                                            class="play-pause-icon mx-4" id="playPause" />
+                                    </svg>
+                                    <i class="bi bi-skip-end-fill text-white fs-4 my-auto ms-2"></i>
+                                </div>
+                                <div class="volume">
+                                    <i class="bi bi-repeat text-white fs-5"></i>
+                                </div>
+                            </div>
+
+                            <audio crossorigin>
+                                <source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/355309/Swing_Jazz_Drum.mp3"
+                                    type="audio/mpeg">
+                            </audio>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <p class="audio-heading mb-1">
+                            Engagement & Communication Workstream
+                        </p>
+                        <p class="audi-para">
+                            <a href="">click Here</a> to view.
+                        </p>
+                        <p class="audio-heading mb-1">
+                            Governance & Oversight Workstream
+                        </p>
+                        <p class="audi-para">
+                            <a href="">click Here</a> to view.
+                        </p>
+                        <p class="audio-heading mb-1">
+                            Resources
+                        </p>
+                        <p class="audi-para">
+                            <a href="">click Here</a> to find all associated resources, including Podcasts, meeting
+                            schedule
+                            and recordings.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
     <section class="mt-5">
         <div class="container text-center">
             <p class="miniheading mx-auto">
@@ -446,42 +821,45 @@
                 <div class="col-md-4 px-0">
                     <img src="./assets/images/fb1.png" alt="">
                 </div>
+
+                <div class="col-md-4 px-0">
+                    <img src="./assets/images/fb3.png" alt="">
+                </div>
                 <div class="col-md-4 px-0">
                     <img src="./assets/images/fb2.png" alt="">
                 </div>
                 <div class="col-md-4 px-0">
-                    <img src="./assets/images/fb3.png" alt="">
+                    <img src="./assets/images/fb2.png" alt="">
                 </div>
-                <div class="col-md-4 px-0">
-                    <img src="./assets/images/fb3.png" alt="">
-                </div>
+
                 <div class="col-md-4 px-0">
                     <img src="./assets/images/fb1.png" alt="">
                 </div>
                 <div class="col-md-4 px-0">
-                    <img src="./assets/images/fb2.png" alt="">
+                    <img src="./assets/images/fb3.png" alt="">
                 </div>
 
             </div>
         </div>
     </section>
+
     <section class="charity ">
         <div class="container">
             <div class="row justify-content-center charity-logo">
-                <div class="col-md-2 col-6">
+                <div class="col-md-3 col-6">
                     <img class="w-100" src="./assets/images/ch1 (4).png" alt="">
                 </div>
-                <div class="col-md-2 col-6">
+                <div class="col-md-3 col-6">
                     <img class="w-100" src="./assets/images/ch1 (3).png" alt="">
                 </div>
-                <div class="col-md-2 col-6">
+                <div class="col-md-3 col-6">
                     <img class="w-100" src="./assets/images/ch1 (2).png" alt="">
                 </div>
-                <div class="col-md-2 col-6">
+                <div class="col-md-3 col-6">
                     <img class="w-100" src="./assets/images/ch1 (1).png" alt="">
                 </div>
-                <p class="para text-center fw-normal mt-4 text-white">Proud to work with Care England, The Care Workers' Charity, Skills for Care & The Care Show</p>
-
+                <p class="para text-center fw-normal mt-4 text-white">Proud to work with Care England, The Care Workers'
+                    Charity, Skills for Care & The Care Show</p>
             </div>
         </div>
     </section>
@@ -506,7 +884,7 @@
     </section>
     <section class="footer pt-5 mt-lg-0 mt-5">
         <footer>
-            <div class="container">
+            <div class="container mb-5">
                 <div class="row">
                     <div class="col-md-6 col-lg-4 footer-logo-sec">
                         <div class="d-lg-none text-center mb-3 d-flex justify-content-center">
@@ -731,6 +1109,7 @@
         return K;
     }
 
+
     function rewind(event) {
         if (inRange(event)) {
             player.currentTime = player.duration * getCoefficient(event);
@@ -772,13 +1151,48 @@
             volumeControls.style.bottom = '-164px';
             volumeControls.style.left = '-3px';
         } else {
-            volumeControls.style.bottom = '52px';
+            volumeControls.style.top = '20px';
             volumeControls.style.left = '-3px';
         }
     }
+
+
+
+    function inRange(event) {
+        let rangeBox = getRangeBox(event);
+        let rect = rangeBox.getBoundingClientRect();
+        let direction = rangeBox.dataset.direction;
+        if (direction == 'horizontal') {
+            var min = rangeBox.offsetLeft;
+            var max = min + rangeBox.offsetWidth;
+            if (event.clientX < min || event.clientX > max) return false;
+        } else {
+            var min = rect.top;
+            var max = min + rangeBox.offsetHeight;
+            if (event.clientY < min || event.clientY > max) return false;
+        }
+        return true;
+    }
+
+    function rewind(event) {
+        if (inRange(event)) {
+            player.currentTime = player.duration * getCoefficient(event);
+        }
+    }
+
+    function changeVolume(event) {
+        if (inRange(event)) {
+            player.volume = getCoefficient(event);
+        }
+    }
+
+    function formatTime(time) {
+        var min = Math.floor(time / 60);
+        var sec = Math.floor(time % 60);
+        return min + ':' + ((sec < 10) ? ('0' + sec) : sec);
+    }
 </script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
+
+<script src="./assets/css/js/bootstrap.bundle.min.js"></script>
 
 </html>
