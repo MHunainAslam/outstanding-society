@@ -75,17 +75,21 @@ body {
 .footer-social-2 a {
   margin-inline: 10px;
   margin-block: auto;
-  font-size: 26px !important;
+  font-size: 20px !important;
   color: white;
 }
 .footer-btn {
   background: white !important;
   color: var(--primary) !important;
-  padding-block: 20px !important;
+  padding-block: 18px !important;
   padding-inline: 35px !important;
 }
 .header-logo {
   height: 60px;
+}
+.subs::placeholder {
+  color: white;
+  font-size: 14px;
 }
 .index-banner {
   display: flex;
@@ -254,15 +258,20 @@ body {
 .slider-footer h5 {
   color: var(--secondry-font);
   color: white;
-  font-size: 20px;
-  font-weight: 700;
+  font-size: 16px;
+  font-weight: 500;
   margin-bottom: 0;
+  font-family: var(--secondry-font);
 }
 .slider-footer p {
   color: var(--primary-font);
   color: white;
-  font-weight: 300;
+  font-weight: 400;
   margin-bottom: 0;
+  font-size: 14px;
+}
+.index-slider {
+  overflow-x:hidden ;
 }
 .index-slider .slick-slide {
   padding: 10px;
@@ -344,6 +353,7 @@ body {
     rgb(45 149 59) 57.82%,
     #75ef85 150.84%
   );
+  margin-top: 125px !important;
   /* background-color: var(--primary); */
 }
 .footer-heading img {
@@ -364,7 +374,7 @@ body {
   color: white;
   font-weight: 500;
   font-family: var(--secondry-font);
-  font-size: 20px;
+  font-size: 18px;
   margin-block: auto;
 }
 .f-heading {
@@ -390,13 +400,13 @@ body {
   text-decoration: none;
   color: white;
   font-weight: 400 !important;
-  font-size: 14px;
+  font-size: 13px;
 }
 .footer-logo-sec .para {
   margin-bottom: 0;
   font-weight: 400 !important;
   color: white;
-  font-size: 14px;
+  font-size: 13px;
 }
 .subs {
   background: transparent;
@@ -408,13 +418,14 @@ body {
   text-decoration: none;
   color: white;
   font-weight: 400;
+  font-size: 13px;
 }
 
 .footer-url ul {
   padding: 0;
 }
 .footer-url li {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   list-style: none;
 }
 .footerline {
@@ -437,12 +448,12 @@ body {
 .vivaldi-desc::after {
   content: "“";
   position: absolute;
-  font-size: 200px;
+  font-size: 300px;
   font-weight: 700;
   font-family: var(--primary-font);
   color: var(--primary);
   opacity: 0.5;
-  top: -75px;
+  top: -165px;
   z-index: -1;
   left: -30px;
 }
@@ -506,6 +517,7 @@ body {
   user-select: none;
   -webkit-user-select: none;
   background: linear-gradient(45deg, var(--primary), var(--secondry));
+  margin-top: 10px;
 }
 .audio.green-audio-player .play-pause-btn {
   display: none;
@@ -621,8 +633,13 @@ body {
 .findout table tr th {
   background-color: var(--primary);
 }
+.ourstory ul {
+  margin-bottom: 0;
+  padding-inline: 15px;
+}
 .ourstory ul li {
-  font-size: 14px;
+  font-size: 13px;
+  color: var(--dark);
 }
 .table-head {
   background-color: var(--primary);
@@ -657,14 +674,15 @@ body {
   background-color: var(--light);
   padding-block: 100px;
   position: relative;
+  overflow-x: hidden;
 }
 .feedback img {
   width: 100%;
-  height: 300px;
+  height: 270px;
   object-fit: contain;
 }
 .feedback-text p {
-  font-size: 14px;
+  font-size: 13px;
 }
 .feedback-text::after {
   content: "“";
@@ -699,25 +717,25 @@ body {
   font-size: 16px !important;
 }
 .side-audio .audio.green-audio-player {
- padding-block: 5px;
- margin-top: 15px;
+  padding-block: 5px;
+  margin-top: 15px;
 }
 .side-audio .audio-name img {
- border-radius: 10px !important;
+  border-radius: 10px !important;
 }
 .side-audio .audio-name .heading {
   font-size: 16px !important;
 }
-.audio-heading{
+.audio-heading {
   color: var(--dark);
   font-size: 16px;
   font-weight: 500;
 }
-.audi-para a{
+.audi-para a {
   text-decoration: none;
-    color: var(--primary);
+  color: var(--primary);
 }
-.audi-para{
+.audi-para {
   font-size: 14px;
 }
 @media (max-width: 992px) {
@@ -736,10 +754,20 @@ body {
     font-size: 35px;
     line-height: normal;
   }
-  .heading {
+  .banner-heading-2 {
     font-size: 30px;
+    line-height: normal;
+  }
+  .heading {
+    font-size: 22px;
   }
   .green-white {
     background: linear-gradient(180deg, var(--primary) 20%, var(--light) 20%);
+  }
+  .video {
+    height: 250px;
+  }
+  .fb-gallery img {
+    height: 175px;
   }
 }
