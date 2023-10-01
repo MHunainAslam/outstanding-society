@@ -801,6 +801,7 @@ width: 100%
   }
 }
 @media (max-width: 768px) {
+  
   .custom-reverse{
     flex-direction: column-reverse;
   }
@@ -980,5 +981,14 @@ button.primary-btn:hover {
   }
   .stachholder-card-1 {
     text-align: start;
+  }
+  .index-slider {
+    padding-left: 12%
+  }
+}
+@media (min-width: 1300px) {
+
+  .index-slider {
+    padding-left: 16%
   }
 }
