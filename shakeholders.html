@@ -13,7 +13,40 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
- 
+    <script type="text/javascript">
+        $(document).on("ready", function () {
+            $(".regular").slick({
+                arrows: true,
+                slidesToShow: 5,
+                infinite: false,
+                centerMode: true,
+                slidesToScroll: 1,
+                responsive: [
+                    {
+                        breakpoint: 1200,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 1,
+                        },
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1,
+                        },
+                    },
+                    {
+                        breakpoint: 400,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                        },
+                    },
+                ],
+            });
+        });
+    </script>
     <title>Document</title>
 </head>
 
@@ -44,7 +77,7 @@
                             </li>
                             <p>|</p>
                             <li class="nav-item">
-                                <a class="nav-link active" href="./about.html">About</a>
+                                <a class="nav-link " href="./about.html">About</a>
                             </li>
                             <p>|</p>
                             <li class="nav-item">
@@ -64,7 +97,7 @@
                             </li>
                             <p>|</p>
                             <li class="nav-item">
-                                <a class="nav-link" href="./outstanding.html">Sustainability</a>
+                                <a class="nav-link " href="./outstanding.html">Sustainability</a>
                             </li>
                             <p>|</p>
                             <li class="nav-item">
@@ -76,7 +109,7 @@
                             </li>
                             <p>|</p>
                             <li class="nav-item">
-                                <a class="nav-link" href="./shakeholders.html">Stakeholders</a>
+                                <a class="nav-link active" href="./shakeholders.html">Stakeholders</a>
                             </li>
                         </ul>
                         <div class="header-social">
@@ -91,263 +124,192 @@
         </nav>
     </section>
     <section class="banner">
-        <img src="./assets/images/01621_Health_Social_Care_553x400_A-8b9beacee86efa93291ac898cdbd8dcb 1.png" alt="">
+        <img src="./assets/images/shakeholder.png" alt="">
         <div class="container banner-text">
             <div class="col-lg-6">
-                <div class="miniheading">About Us</div>
+                <div class="miniheading">Resources</div>
                 <br />
                 <p class="banner-heading text-white">
-                    Who Are We
+                    Stakeholders
                 </p>
 
             </div>
         </div>
     </section>
-    <section class="mt-5">
-        <div class="container">
-            <video controls poster="./assets/images/poster.jpeg" class="video">
-                <source src="./assets/images/WhatsApp Video 2023-09-22 at 02.47.18.mp4" type="video/mp4" />
-                <source src="movie.ogg" type="video/ogg" />
-                Your browser does not support the video tag.
-            </video>
-        </div>
-    </section>
-    <section class="light-bg mt-5 ourstory">
-        <div class="container py-5">
-            <p class="miniheading">
-                About
-            </p>
-            <p class="heading">
-                Our Story
-            </p>
-            <p class="mt-4 para mb-0">
-                he Outstanding Society was the idea of Camilla Trimble who owned a Care Home in Dorset.
-                <br>
-                Having achieved an Outstanding CQC rating Camilla identified other like minded ‘Outstanding’ providers
-                to promote
-                sharing best practice within adult social care throughout England. The core team was formed of Camilla
-                Trimble, James Rycroft, Russell Leese and Zoe Fry.
-                <br>
-                There have been several conferences since the
-                Society’s formation (please see our Gallery page) and we have been extremely honoured to have welcomed
-                the following speakers.
-            </p>
-            <ul class="my-2">
-                <li> Professor Martin Green OBE – Chief Executive of Care England </li>
-                <li>Andrea Sutcliffe
-                    CBE – former CQC Chief Inspector of Adult Social Care and now Chief Executive of the Nursing and
-                    Midwifery Council </li>
-                <li> Kate Terroni – CQC Chief Inspector of Adult Social Care.</li>
-                <li> Sharon Allen OBE – CEO Skills
-                    for Care 2010-2019</li>
-                <li> Avnish Goyal – Chair Care England</li>
-                <li> Rob Hargreaves – Skills for Care Information
-                    Service Manager</li>
-                <li> Alex Ramamurthy – Founder/CEO at Mirthy </li>
-                <li> Wendy Mitchell – Author of ‘Someone I used to
-                    know’</li>
-            </ul>
-            <p class=" para mb-0">
-                The Society wishes to thank Camilla Trimble for her commitment in setting up the OS back in 2014.
-                Camilla is no longer involved with the Society, but we would like to acknowledge the immense
-                contribution she made.
-                <br>
-                Like most Health Care Professionals during the early months of COVID meant that
-                the Outstanding Society ‘hibernated’ but throughout they continued to explore ways of developing the
-                group and attend virtual Trade Association meetings with the Care Quality Commission.
-                <br>
-                In 2021 we formed
-                the OS into a Community Interest Company and in 2022 welcomed new Directors to the Board.
-                <br>
-                Since April
-                2021 we have held virtual monthly meetings with some fantastic key note speakers. <br> The Society
-                welcomes
-                all providers to sign up to be a member and encourages Outstanding Providers to become Contributors to
-                the OS.
-            </p>
-        </div>
-    </section>
-    <section class="mt-5">
-        <div class="container">
-            <p class="miniheading">The Team</p>
-            <div class="d-flex justify-content-between align-content-center">
-                <p class="heading w-auto">Meet The Team</p>
-                <div class="d-flex">
-                    <button class="slickbtnprev">
-                        <i class="bi bi-arrow-left"></i>
-                    </button>
-                    <button class="slickbtnnext">
-                        <i class="bi bi-arrow-right"></i>
-                    </button>
+
+    <section class="my-5">
+        <div class="container mt-5 text-center">
+            <div class="row">
+                <div class="col-12 mx-auto my-3 ">
+                    <div class="row ">
+                        <div class="col-md-7 text-md-start my-2">
+                            <div
+                                class="d-flex align-items-md-start justify-content-center h-100 align-items-center flex-column text-md-start w-100">
+                                <a href="https://theoutstandingsociety.co.uk/partners/" target="_blank"
+                                    class="mb-2 heading">
+                                    The VIVALDI Care
+                                </a>
+                                <p class="text-small my-3">
+                                    Care England, University College London, and the Outstanding Society have recently
+                                    started working together to tackle the problem of infection in care homes by
+                                    establishing a new programme of research and surveillance, using data to help shape
+                                    the future of social care through supporting improvements in care quality.Care
+                                    England, University College London, and the Outstanding Society
+                                </p>
+                                <button class="px-md-5 mt-2 py-1 btn primary-btn">
+                                    www.vivaldicare.com
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-md-5 my-2">
+                            <div class="h-100  stachholder-card-2">
+                                <div><img src="./assets/images/Logo 1.png" alt=""></div>
+                                <div class="stack-social">
+                                    <div class="pe-2">
+                                        <p class="para mb-0">
+                                            Email
+                                        </p>
+                                        <a
+                                            href="mailto:info@theoutstandingsociety.co.uk">info@theoutstandingsociety.co.uk</a>
+                                    </div>
+                                    <img src="./assets/images/email.icon.png" alt="">
+                                </div>
+                                <div class="stack-social">
+                                    <div class="pe-2">
+                                        <p class="para mb-0">
+                                            Call Us
+                                        </p>
+                                        <a href="rel:00112365489">
+                                            (00) 112 365 489
+                                        </a>
+                                    </div>
+                                    <img src="./assets/images/call.Icon.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
+
             </div>
         </div>
     </section>
-    <section class="regular index-slider ">
-        <div>
-            <div class="position-relative d-flex justify-content-center align-items-center">
-                <a href="./assets/images/photo.png" data-fancybox="gallery">
-                    <img src="./assets/images/photo.png" class="slider-img" alt="" />
-                </a>
-                <img src="./assets/images/Polygon 2.png" class="position-absolute" alt="" />
-            </div>
-            <div class="slider-footer">
-                <h5>Jessca Arow</h5>
-                <p>Designer</p>
-                <div class="slider-social">
-                    <a href="">
-                        <i class="bi bi-linkedin"></i>
-                    </a>
-                    <a href=""><i class="bi bi-twitter"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
+    <section class="my-5 light-bg">
+        <div class="container mt-5 text-center">
+            <div class="row">
+                <div class="col-12 mx-auto my-3 ">
+                    <div class="row ">
+                        <div class="col-md-7 text-md-start my-2">
+                            <div
+                                class="d-flex align-items-md-start justify-content-center h-100 align-items-center flex-column text-md-start w-100">
+                                <a href="https://theoutstandingsociety.co.uk/partners/" target="_blank"
+                                    class="mb-2 heading">
+                                    The VIVALDI Care
+                                </a>
+                                <p class="text-small my-3">
+                                    Care England, University College London, and the Outstanding Society have recently
+                                    started working together to tackle the problem of infection in care homes by
+                                    establishing a new programme of research and surveillance, using data to help shape
+                                    the future of social care through supporting improvements in care quality.Care
+                                    England, University College London, and the Outstanding Society
+                                </p>
+                                <button class="px-md-5 mt-2 py-1 btn primary-btn">
+                                    www.vivaldicare.com
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-md-5 my-2">
+                            <div class="h-100  stachholder-card-2">
+                                <div><img src="./assets/images/Logo 1.png" alt=""></div>
+                                <div class="stack-social">
+                                    <div class="pe-2">
+                                        <p class="para mb-0">
+                                            Email
+                                        </p>
+                                        <a
+                                            href="mailto:info@theoutstandingsociety.co.uk">info@theoutstandingsociety.co.uk</a>
+                                    </div>
+                                    <img src="./assets/images/email.icon.png" alt="">
+                                </div>
+                                <div class="stack-social">
+                                    <div class="pe-2">
+                                        <p class="para mb-0">
+                                            Call Us
+                                        </p>
+                                        <a href="rel:00112365489">
+                                            (00) 112 365 489
+                                        </a>
+                                    </div>
+                                    <img src="./assets/images/call.Icon.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
+
             </div>
         </div>
-        <div>
-            <div class="position-relative d-flex justify-content-center align-items-center">
-                <a href="./assets/images/photo.png" data-fancybox="gallery">
-                    <img src="./assets/images/photo.png" class="slider-img" alt="" />
-                </a>
-                <img src="./assets/images/Polygon 2.png" class="position-absolute" alt="" />
-            </div>
-            <div class="slider-footer">
-                <h5>Jessca Arow</h5>
-                <p>Designer</p>
-                <div class="slider-social">
-                    <a href="">
-                        <i class="bi bi-linkedin"></i>
-                    </a>
-                    <a href=""><i class="bi bi-twitter"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
+    </section>
+    <section class="my-5">
+        <div class="container mt-5 text-center">
+            <div class="row">
+                <div class="col-12 mx-auto my-3 ">
+                    <div class="row ">
+                        <div class="col-md-7 text-md-start my-2">
+                            <div
+                                class="d-flex align-items-md-start justify-content-center h-100 align-items-center flex-column text-md-start w-100">
+                                <a href="https://theoutstandingsociety.co.uk/partners/" target="_blank"
+                                    class="mb-2 heading">
+                                    The VIVALDI Care
+                                </a>
+                                <p class="text-small my-3">
+                                    Care England, University College London, and the Outstanding Society have recently
+                                    started working together to tackle the problem of infection in care homes by
+                                    establishing a new programme of research and surveillance, using data to help shape
+                                    the future of social care through supporting improvements in care quality.Care
+                                    England, University College London, and the Outstanding Society
+                                </p>
+                                <button class="px-md-5 mt-2 py-1 btn primary-btn">
+                                    www.vivaldicare.com
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-md-5 my-2">
+                            <div class="h-100  stachholder-card-2">
+                                <div><img src="./assets/images/Logo 1.png" alt=""></div>
+                                <div class="stack-social">
+                                    <div class="pe-2">
+                                        <p class="para mb-0">
+                                            Email
+                                        </p>
+                                        <a
+                                            href="mailto:info@theoutstandingsociety.co.uk">info@theoutstandingsociety.co.uk</a>
+                                    </div>
+                                    <img src="./assets/images/email.icon.png" alt="">
+                                </div>
+                                <div class="stack-social">
+                                    <div class="pe-2">
+                                        <p class="para mb-0">
+                                            Call Us
+                                        </p>
+                                        <a href="rel:00112365489">
+                                            (00) 112 365 489
+                                        </a>
+                                    </div>
+                                    <img src="./assets/images/call.Icon.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div>
-            <div class="position-relative d-flex justify-content-center align-items-center">
-                <a href="./assets/images/photo.png" data-fancybox="gallery">
-                    <img src="./assets/images/photo.png" class="slider-img" alt="" />
-                </a>
-                <img src="./assets/images/Polygon 2.png" class="position-absolute" alt="" />
-            </div>
-            <div class="slider-footer">
-                <h5>Jessca Arow</h5>
-                <p>Designer</p>
-                <div class="slider-social">
-                    <a href="">
-                        <i class="bi bi-linkedin"></i>
-                    </a>
-                    <a href=""><i class="bi bi-twitter"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                </div>
-            </div>
-        </div>
-        <div>
-            <div class="position-relative d-flex justify-content-center align-items-center">
-                <a href="./assets/images/photo.png" data-fancybox="gallery">
-                    <img src="./assets/images/photo.png" class="slider-img" alt="" />
-                </a>
-                <img src="./assets/images/Polygon 2.png" class="position-absolute" alt="" />
-            </div>
-            <div class="slider-footer">
-                <h5>Jessca Arow</h5>
-                <p>Designer</p>
-                <div class="slider-social">
-                    <a href="">
-                        <i class="bi bi-linkedin"></i>
-                    </a>
-                    <a href=""><i class="bi bi-twitter"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                </div>
-            </div>
-        </div>
-        <div>
-            <div class="position-relative d-flex justify-content-center align-items-center">
-                <a href="./assets/images/photo.png" data-fancybox="gallery">
-                    <img src="./assets/images/photo.png" class="slider-img" alt="" />
-                </a>
-                <img src="./assets/images/Polygon 2.png" class="position-absolute" alt="" />
-            </div>
-            <div class="slider-footer">
-                <h5>Jessca Arow</h5>
-                <p>Designer</p>
-                <div class="slider-social">
-                    <a href="">
-                        <i class="bi bi-linkedin"></i>
-                    </a>
-                    <a href=""><i class="bi bi-twitter"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                </div>
-            </div>
-        </div>
-        <div>
-            <div class="position-relative d-flex justify-content-center align-items-center">
-                <a href="./assets/images/photo.png" data-fancybox="gallery">
-                    <img src="./assets/images/photo.png" class="slider-img" alt="" />
-                </a>
-                <img src="./assets/images/Polygon 2.png" class="position-absolute" alt="" />
-            </div>
-            <div class="slider-footer">
-                <h5>Jessca Arow</h5>
-                <p>Designer</p>
-                <div class="slider-social">
-                    <a href="">
-                        <i class="bi bi-linkedin"></i>
-                    </a>
-                    <a href=""><i class="bi bi-twitter"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                </div>
-            </div>
-        </div>
-        <div>
-            <div class="position-relative d-flex justify-content-center align-items-center">
-                <a href="./assets/images/photo.png" data-fancybox="gallery">
-                    <img src="./assets/images/photo.png" class="slider-img" alt="" />
-                </a>
-                <img src="./assets/images/Polygon 2.png" class="position-absolute" alt="" />
-            </div>
-            <div class="slider-footer">
-                <h5>Jessca Arow</h5>
-                <p>Designer</p>
-                <div class="slider-social">
-                    <a href="">
-                        <i class="bi bi-linkedin"></i>
-                    </a>
-                    <a href=""><i class="bi bi-twitter"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                </div>
-            </div>
-        </div>
-        <div>
-            <div class="position-relative d-flex justify-content-center align-items-center">
-                <a href="./assets/images/photo.png" data-fancybox="gallery">
-                    <img src="./assets/images/photo.png" class="slider-img" alt="" />
-                </a>
-                <img src="./assets/images/Polygon 2.png" class="position-absolute" alt="" />
-            </div>
-            <div class="slider-footer">
-                <h5>Jessca Arow</h5>
-                <p>Designer</p>
-                <div class="slider-social">
-                    <a href="">
-                        <i class="bi bi-linkedin"></i>
-                    </a>
-                    <a href=""><i class="bi bi-twitter"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                </div>
+
+
             </div>
         </div>
     </section>
 
-
-    <section class="mt-5">
+    <section class="pt-5">
         <div class="container text-center">
             <p class="miniheading mx-auto">
                 Our Facebook

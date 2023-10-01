@@ -13,10 +13,42 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
- 
+    <script type="text/javascript">
+        $(document).on("ready", function () {
+            $(".regular").slick({
+                arrows: true,
+                slidesToShow: 5,
+                infinite: false,
+                centerMode: true,
+                slidesToScroll: 1,
+                responsive: [
+                    {
+                        breakpoint: 1200,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 1,
+                        },
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1,
+                        },
+                    },
+                    {
+                        breakpoint: 400,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                        },
+                    },
+                ],
+            });
+        });
+    </script>
     <title>Document</title>
 </head>
-
 
 <body>
     <section>
@@ -41,7 +73,7 @@
                     <div class="offcanvas-body d-lg-flex justify-content-between">
                         <ul class="navbar-nav justify-content-start flex-grow-1 pe-3 align-items-center custome-nav">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                                <a class="nav-link" aria-current="page" href="./index.html">Home</a>
                             </li>
                             <p>|</p>
                             <li class="nav-item">
@@ -69,7 +101,7 @@
                             </li>
                             <p>|</p>
                             <li class="nav-item">
-                                <a class="nav-link" href="./contact.html">Contact</a>
+                                <a class="nav-link active" href="./contact.html">Contact</a>
                             </li>
                             <p>|</p>
                             <li class="nav-item">
@@ -91,365 +123,150 @@
             </div>
         </nav>
     </section>
-    <section class="index-banner">
-        <video poster="./assets/images/banner.png">
-            <source src="./assets/images/WhatsApp Video 2023-09-22 at 02.47.18.mp4" type="video/mp4" />
-            <source src="movie.ogg" type="video/ogg" />
-            Your browser does not support the video tag.
-        </video>
+    <section class="banner">
+        <img src="./assets/images/news.png" alt="">
         <div class="container banner-text">
             <div class="col-lg-6">
-                <div class="miniheading">the out standing society</div>
+                <div class="miniheading">Contact</div>
                 <br />
-                <p class="banner-heading">
-                    your getway <br />
-                    pure social care
+                <p class="banner-heading text-white">
+                    Contact Us
                 </p>
-                <p class="para text-black">
-                    In augue ligula, feugiat ut nulla consequat. Ut est lacus, molestie
-                    in arcu no, iaculis vehicula ipsum. Nunc faucibus, nisl id dapibus
-                    finibus, enim diam interdum nulla, sed laoreet risus lectus.
-                </p>
-                <button class="btn primary-btn">Explore More</button>
-            </div>
-        </div>
-    </section>
-    <section>
-        <div class="container my-5">
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="miniheading">Our Sponsors</div>
-                    <p class="heading mt-3 pe-lg-5">
-                        extremely grateful for the following organisations
-                    </p>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="d-flex sponser mt-4">
-                        <div class="col-4">
-                            <img src="./assets/images/Camascope_logo-04 1.png" alt="" />
-                        </div>
-                        <div class="col-8 ps-4">
-                            <p class="heading-sm">Camascope</p>
-                            <p class="para">
-                                formerly known as VCare Systems, is a leading provider of eMAR
-                                (electronic medicatio...
-                            </p>
-                        </div>
-                    </div>
-                    <div class="d-flex sponser mt-4">
-                        <div class="col-4">
-                            <img src="./assets/images/found-logo-1 1.png" alt="" />
-                        </div>
-                        <div class="col-8 ps-4">
-                            <p class="heading-sm">Found</p>
-                            <p class="para">
-                                by Lottie is the leading software for care homes & retirement
-                                living communities. Designed...
-                            </p>
-                        </div>
-                    </div>
-                    <div class="d-flex sponser mt-4">
-                        <div class="col-4">
-                            <img src="./assets/images/Nourish_logo_No_R_300dpi5 1.png" alt="" />
-                        </div>
-                        <div class="col-8 ps-4">
-                            <p class="heading-sm">Nourish Care</p>
-                            <p class="para">
-                                is a Digital Care Planning provider offering a flexible
-                                digital platform that can be tailored...
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="d-flex sponser mt-4">
-                        <div class="col-4">
-                            <img src="./assets/images/Icon.png" alt="" />
-                        </div>
-                        <div class="col-8 ps-4">
-                            <p class="heading-sm">PainChek®</p>
-                            <p class="para">
-                                the app available on smartphones and tablets that enables
-                                digital pain assessments...
-                            </p>
-                        </div>
-                    </div>
-                    <div class="d-flex sponser mt-4">
-                        <div class="col-4">
-                            <img src="./assets/images/RWK-Goodman 1.png" alt="" />
-                        </div>
-                        <div class="col-8 ps-4">
-                            <p class="heading-sm">Local Shipping Services</p>
-                            <p class="para">
-                                Following the quality of our service thus having gained trust
-                                of our many clients.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="green-white">
-        <div class="container-fluid p-sm-5">
-            <div class="row px-lg-5">
-                <div class="col-md-7 my-auto">
-                    <img src="./assets/images/Image.png" class="w-100" alt="" />
-                </div>
 
-                <div class="col-md-5 ps-md-4 pe-md-5 col-md-4 my-md-auto mt-5 z-1">
-                    <p class="miniheading">Why Choose</p>
-                    <div class="heading">
-                        Sharing and Celebrating Best practice in Social Care
-                    </div>
-                    <p class="para mt-3 ">
-                        In 2021 the Outstanding Society (OS) was set up as a Community
-                        Interest Company (CIC). This was to provide a platform to share
-                        and celebrate best practice whilst helping others to improve and
-                        raise the profile of Social Care. <br /><br /><br />Our joint
-                        vision as Directors is to give Providers Free membership which
-                        will allow free access to our virtual events, newsletters,
-                        podcasts and the OS app. It will provide a platform for all
-                        providers to access topical information and will also be a
-                        platform to celebrate innovation and share best practice.
-                        <br /><br /><br />
-                        We continue to have close partnerships with Care England, Skills
-                        for care, the Care Workers Charity and the DHSC.
-                    </p>
-                    <button class="btn primary-btn mt-5">Explore More</button>
-                </div>
             </div>
         </div>
     </section>
-    <section class="mt-5">
+
+    <section class="contact my-md-5">
         <div class="container">
-            <p class="miniheading">The Team</p>
-            <div class="d-flex justify-content-between align-content-center">
-                <p class="heading w-auto">Meet The Team</p>
-                <div class="d-flex">
-                    <button class="slickbtnprev">
-                        <i class="bi bi-arrow-left"></i>
-                    </button>
-                    <button class="slickbtnnext">
-                        <i class="bi bi-arrow-right"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="regular index-slider">
-     
-        <div>
-            <div class="position-relative d-flex justify-content-center align-items-center">
-                <a href="./assets/images/photo.png" data-fancybox="gallery">
-                    <img src="./assets/images/photo.png" class="slider-img" alt="" />
-                </a>
-                <img src="./assets/images/Polygon 2.png" class="position-absolute" alt="" />
-            </div>
-            <div class="slider-footer">
-                <h5>Jessca Arow</h5>
-                <p>Designer</p>
-                <div class="slider-social">
-                    <a href="">
-                        <i class="bi bi-linkedin"></i>
-                    </a>
-                    <a href=""><i class="bi bi-twitter"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                </div>
-            </div>
-        </div>
-        <div>
-            <div class="position-relative d-flex justify-content-center align-items-center">
 
-                <a href="./assets/images/photo.png" data-fancybox="gallery">
-                    <img src="./assets/images/photo.png" class="slider-img" alt="" />
-                </a>
-
-                <img src="./assets/images/Polygon 2.png" class="position-absolute" alt="" />
-            </div>
-            <div class="slider-footer">
-                <h5>Jessca Arow</h5>
-                <p>Designer</p>
-                <div class="slider-social">
-                    <a href="">
-                        <i class="bi bi-linkedin"></i>
-                    </a>
-                    <a href=""><i class="bi bi-twitter"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                </div>
-            </div>
-        </div>
-        <div>
-            <div class="position-relative d-flex justify-content-center align-items-center">
-                <a href="./assets/images/photo.png" data-fancybox="gallery">
-                    <img src="./assets/images/photo.png" class="slider-img" alt="" />
-                </a>
-                <img src="./assets/images/Polygon 2.png" class="position-absolute" alt="" />
-            </div>
-            <div class="slider-footer">
-                <h5>Jessca Arow</h5>
-                <p>Designer</p>
-                <div class="slider-social">
-                    <a href="">
-                        <i class="bi bi-linkedin"></i>
-                    </a>
-                    <a href=""><i class="bi bi-twitter"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                </div>
-            </div>
-        </div>
-        <div>
-            <div class="position-relative d-flex justify-content-center align-items-center">
-                <a href="./assets/images/photo.png" data-fancybox="gallery">
-                    <img src="./assets/images/photo.png" class="slider-img" alt="" />
-                </a>
-                <img src="./assets/images/Polygon 2.png" class="position-absolute" alt="" />
-            </div>
-            <div class="slider-footer">
-                <h5>Jessca Arow</h5>
-                <p>Designer</p>
-                <div class="slider-social">
-                    <a href="">
-                        <i class="bi bi-linkedin"></i>
-                    </a>
-                    <a href=""><i class="bi bi-twitter"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                </div>
-            </div>
-        </div>
-        <div>
-            <div class="position-relative d-flex justify-content-center align-items-center">
-                <a href="./assets/images/photo.png" data-fancybox="gallery">
-                    <img src="./assets/images/photo.png" class="slider-img" alt="" />
-                </a>
-                <img src="./assets/images/Polygon 2.png" class="position-absolute" alt="" />
-            </div>
-            <div class="slider-footer">
-                <h5>Jessca Arow</h5>
-                <p>Designer</p>
-                <div class="slider-social">
-                    <a href="">
-                        <i class="bi bi-linkedin"></i>
-                    </a>
-                    <a href=""><i class="bi bi-twitter"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                </div>
-            </div>
-        </div>
-        <div>
-            <div class="position-relative d-flex justify-content-center align-items-center">
-                <a href="./assets/images/photo.png" data-fancybox="gallery">
-                    <img src="./assets/images/photo.png" class="slider-img" alt="" />
-                </a>
-                <img src="./assets/images/Polygon 2.png" class="position-absolute" alt="" />
-            </div>
-            <div class="slider-footer">
-                <h5>Jessca Arow</h5>
-                <p>Designer</p>
-                <div class="slider-social">
-                    <a href="">
-                        <i class="bi bi-linkedin"></i>
-                    </a>
-                    <a href=""><i class="bi bi-twitter"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                </div>
-            </div>
-        </div>
-        <div>
-            <div class="position-relative d-flex justify-content-center align-items-center">
-                <a href="./assets/images/photo.png" data-fancybox="gallery">
-                    <img src="./assets/images/photo.png" class="slider-img" alt="" />
-                </a>
-                <img src="./assets/images/Polygon 2.png" class="position-absolute" alt="" />
-            </div>
-            <div class="slider-footer">
-                <h5>Jessca Arow</h5>
-                <p>Designer</p>
-                <div class="slider-social">
-                    <a href="">
-                        <i class="bi bi-linkedin"></i>
-                    </a>
-                    <a href=""><i class="bi bi-twitter"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                </div>
-            </div>
-        </div>
-        <div>
-            <div class="position-relative d-flex justify-content-center align-items-center">
-                <a href="./assets/images/photo.png" data-fancybox="gallery">
-                    <img src="./assets/images/photo.png" class="slider-img" alt="" />
-                </a>
-                <img src="./assets/images/Polygon 2.png" class="position-absolute" alt="" />
-            </div>
-            <div class="slider-footer">
-                <h5>Jessca Arow</h5>
-                <p>Designer</p>
-                <div class="slider-social">
-                    <a href="">
-                        <i class="bi bi-linkedin"></i>
-                    </a>
-                    <a href=""><i class="bi bi-twitter"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="health-social">
-        <div class="container z-1 position-relative">
             <div class="row">
-                <div class="col-md-4 col">
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="./assets/images/croped-300x300 copy 1.png" alt="">
-                            <p class="para">The Chief Nurse for Adult Social Care, Deborah Sturdy, is working with
-                                colleagues at NHS England...</p>
-                            <button class="btn primary-btn">Explore More</button>
+                <div class="col-lg-10 mx-auto">
+                    <div class="contact-form row">
+                        <div class="col-lg-10 col-11 mx-auto mb-5">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <div class="text-center">
+                                <p class="miniheading mx-auto">
+                                    Contact
+                                </p>
+                                <p class="heading mb-2">
+                                    Get in touch with us
+                                </p>
+                                <p>
+                                    Leverage agile frameworks to provide a robust synopsis for strategy foster collaborative thinking to further the overall value.
+                                </p>
+                            </div> 
+                        </div>
+                        <div class="row my-4">
+                            <div class="col-md-4 text-center">
+                            
+                            <a href="#" class="text-center">
+                                <img class="mb-2" src="./assets/images/email.icon.png" alt="Mail">
+                                <p class="text-white">
+                                    Contact@logistics.com
+                                </p>
+                            </a>
+                        </div>
+                            
+                            <div class="col-md-4 text-center">
+                            <a href="#" class="text-center">
+                                <img class="mb-2" src="./assets/images/call.Icon.png" alt="Mail">
+                                <p class="text-white">
+                                    (00) 112 365 489
+                                </p>
+                                    
+                            </a>
+                        </div>
+                                <div class="col-md-4 text-center">
+                            <a href="#" class="text-center">
+                                <img class="mb-2" src="./assets/images/time.png" alt="Mail">
+                                <p class="text-white">
+                                    Mon - Sat 9.00 - 18.00
+                                    Sunday Closed
+                                </p>
+                            </a>
+                        
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 my-2">
+                                <input type="text" class="form-control" placeholder="First Name*">
+                            </div>
+                            <div class="col-md-6 my-2">
+                                <input type="text" class="form-control" placeholder="Last Name*">
+                            </div>
+                            <div class="col-md-6 my-2">
+                                <input type="text" class="form-control" placeholder="Organization*">
+                            </div>
+                            <div class="col-md-6 my-2">
+                                <input type="text" class="form-control" placeholder="Job Title/Position*">
+                            </div>
+                            <div class="col-md-6 my-2">
+                                <input type="text" class="form-control" placeholder="Email*">
+                            </div>
+                            <div class="col-md-6 my-2">
+                                <input type="text" class="form-control" placeholder="Telephone*">
+                            </div>
+                            <div class="col-md-6 my-2">
+                                <input type="text" class="form-control" placeholder="CQC Location ID*">
+                            </div>
+                            <div class="col-md-6 my-2">
+                                <input type="text" class="form-control" placeholder="CQC Rating*">
+                            </div>
+                            <div class="col-12 my-2">
+                                <textarea rows="3" class="form-control" placeholder="Your Message"></textarea>
+                                                        </div>
+                            <div class="col-12 my-2 text-center">
+                                <button class="btn yellow-btn">Submit Message</button>
+                                                        </div>
+                            <div class="col-12 mb-2 mt-4">
+                                <div class="d-flex gap-2 align-content-center">
+
+                                    <input type="checkbox" class="bg-transparent" id="inp1">
+                                    <label class="text-tiny mb-0" for="inp1">
+                                        I would like to sign up to your monthly newsletters and information about events 
+                                    </label>
+                                </div>
+
+                            </div>
+                            <div class="col-12">
+                                <div class="d-flex gap-2 align-content-center">
+
+                                    <input type="checkbox" class="bg-transparent" id="inp1">
+                                    <label class="text-tiny mb-0" for="inp1"> 
+I would like to hear from your sponsors
+                                    </label>
+                                </div>
+
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4 col">
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="./assets/images/Proud-to-Support-1024x342 copy 1.png" alt="">
-                            <p class="para">“Our mission is to improve the quality of life for people living, visiting,
-                                and working in care homes, while also reducing the risk of infections...</p>
-                            <button class="btn primary-btn">Explore More</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col">
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="./assets/images/slice1-1 copy 1.png" alt="">
-                            <p class="para">The Chief Nurse for Adult Social Care, Deborah Sturdy, is working with
-                                colleagues at NHS England...</p>
-                            <button class="btn primary-btn">Explore More</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+</div></div>
+    </div>
+</div>
     </section>
-    <section class="mt-5">
+
+        <section class="my-5">
         <div class="container mt-5 text-center">
-            <p class="miniheading mx-auto">
-                Our Blog
-            </p>
-            <p class="heading">
-                Our Latest News
-            </p>
-            <div class="row justify-content-center pt-5">
+            <div class="row">
+                <div class="col-10 mx-auto">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <div>
+                            <p class="miniheading mx-auto">
+                                Our Blog
+                            </p>
+                            <p class="heading">
+                                Our Latest News
+                            </p>
+                        </div> 
+                    </div>
+        </div>
+      </div>
+            <div class="row justify-content-center pt-3">
+                
                 <div class="col-lg-10">
-                    <div class="row mt-4 w-100 mx-auto b-block">
-                        <div class="col-lg-6 col-md-5 mb-4 pe-0">
+                    <div class="row mt-4 b-block">
+                        <div class="col-lg-6 col-md-5 pe-0">
                             <img src="./assets/images/blog.png" class="w-100" alt="">
                         </div>
                         <div class="col-lg-6 col-md-7 d-flex px-0">
@@ -495,13 +312,14 @@
                                 </p>
                             </div>
                         </div>
-                    </div>   <div class="row mt-4 w-100 mx-auto b-block">
-                        <div class="col-lg-6 col-md-5 mb-4 pe-0">
+                    </div>
+                    <div class="row mt-4 b-block">
+                        <div class="col-lg-6 col-md-5 pe-0">
                             <img src="./assets/images/blog.png" class="w-100" alt="">
                         </div>
                         <div class="col-lg-6 col-md-7 d-flex px-0">
                             <div class=" col-3 blog-date">
-                                <svg width="43" height="48" viewBox="0 0 53 58" fill="none" class=" mx-auto"
+                                <svg width="53" height="58" viewBox="0 0 53 58" fill="none" class=" mx-auto"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <rect x="11" y="28" width="6" height="6" stroke="#1C1F35" stroke-linecap="round"
                                         stroke-linejoin="round" />
@@ -542,13 +360,14 @@
                                 </p>
                             </div>
                         </div>
-                    </div>   <div class="row mt-4 w-100 mx-auto b-block">
-                        <div class="col-lg-6 col-md-5 mb-4 pe-0">
+                    </div>
+                    <div class="row mt-4 b-block">
+                        <div class="col-lg-6 col-md-5 pe-0">
                             <img src="./assets/images/blog.png" class="w-100" alt="">
                         </div>
                         <div class="col-lg-6 col-md-7 d-flex px-0">
                             <div class=" col-3 blog-date">
-                                <svg width="43" height="48" viewBox="0 0 53 58" fill="none" class=" mx-auto"
+                                <svg width="53" height="58" viewBox="0 0 53 58" fill="none" class=" mx-auto"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <rect x="11" y="28" width="6" height="6" stroke="#1C1F35" stroke-linecap="round"
                                         stroke-linejoin="round" />
@@ -590,32 +409,14 @@
                             </div>
                         </div>
                     </div> 
+
                     <button class="btn primary-btn mt-5 ">More Blog</button>
                 </div>
             </div>
         </div>
     </section>
-    <section class="charity ">
-        <div class="container">
-            <div class="row justify-content-center charity-logo">
-                <div class="col-md-3 col-6">
-                    <img class="w-100" src="./assets/images/ch1 (4).png" alt="">
-                </div>
-                <div class="col-md-3 col-6">
-                    <img class="w-100" src="./assets/images/ch1 (3).png" alt="">
-                </div>
-                <div class="col-md-3 col-6">
-                    <img class="w-100" src="./assets/images/ch1 (2).png" alt="">
-                </div>
-                <div class="col-md-3 col-6">
-                    <img class="w-100" src="./assets/images/ch1 (1).png" alt="">
-                </div>
-                <p class="para text-center fw-normal mt-4 text-white">Proud to work with Care England, The Care Workers'
-                    Charity, Skills for Care & The Care Show</p>
-            </div>
-        </div>
-    </section>
-    <section class="mt-5">
+
+    <section class="pt-5">
         <div class="container text-center">
             <p class="miniheading mx-auto">
                 Our Facebook
@@ -648,7 +449,29 @@
             </div>
         </div>
     </section>
-    <section class="footer-heading mt-5 d-lg-block d-none">
+
+    <section class="charity ">
+        <div class="container">
+            <div class="row justify-content-center charity-logo">
+                <div class="col-md-3 col-6">
+                    <img class="w-100" src="./assets/images/ch1 (4).png" alt="">
+                </div>
+                <div class="col-md-3 col-6">
+                    <img class="w-100" src="./assets/images/ch1 (3).png" alt="">
+                </div>
+                <div class="col-md-3 col-6">
+                    <img class="w-100" src="./assets/images/ch1 (2).png" alt="">
+                </div>
+                <div class="col-md-3 col-6">
+                    <img class="w-100" src="./assets/images/ch1 (1).png" alt="">
+                </div>
+                <p class="para text-center fw-normal mt-4 text-white">Proud to work with Care England, The Care Workers'
+                    Charity, Skills for Care & The Care Show</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer-heading d-lg-block d-none about">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6 col-lg-4 py-2 secomdary-bg text-center">
@@ -723,7 +546,7 @@
                         </ul>
                     </div>
                     <div class="col-md-6 col-lg-4 text-center text-lg-start"">
-                            <p class=" f-heading my-5 d-lg-none">
+                        <p class=" f-heading my-5 d-lg-none">
                         Subscribe</p>
                         <form action="">
                             <input type="text" class="form-control subs" placeholder="Email Here*">
@@ -756,7 +579,6 @@
     $(".slickbtnnext").on("click", function () {
         $(".slick-next").click();
     });
-
 </script>
 <script src="./assets/js/script.js"></script>
 <script src="./assets/css/js/bootstrap.bundle.min.js"></script>
